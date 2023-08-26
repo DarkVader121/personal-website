@@ -42,7 +42,7 @@ const LandingPage = () => {
                      >
                         Erron John
                      </Typography>
-                    <CustomButton title="Contact Me!" btnSize="lg" btnVariant="gradient" containerStyles="mt-2" textStyles=""/>
+                    <CustomButton title="Contact Me!" btnSize="lg" btnVariant="gradient" containerStyles="mt-2" textStyles="Inter"/>
                 </div>
                 <div className='text-left'>
                     <Typography

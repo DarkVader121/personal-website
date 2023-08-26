@@ -11,6 +11,13 @@ import CustomButton from "./CustomButton";
 import Project1 from "./Project1"
 import Project2 from "./Project2";
 import Project3 from "./Project3";
+import ChurchDrawer from "./ChurchDrawer";
+import CarDrawer from "./CarDrawer";
+import AdoptDrawer from "./AdoptDrawer";
+import CertificateModal from "./CertificateModal";
+import FrontendDevelopment from "./FrontendDevelopment";
+import BackendDevelopment from "./BackendDevelopment";
+import YoutubeFrame from "./YoutubeFrame";
 export {
     Navigation,
     Loader, 
@@ -24,5 +31,12 @@ export {
     CustomButton, 
     Project1, 
     Project2, 
-    Project3, 
+    Project3,
+    ChurchDrawer, 
+    CarDrawer, 
+    AdoptDrawer,
+    CertificateModal,
+    FrontendDevelopment,
+    BackendDevelopment,
+    YoutubeFrame,
 }

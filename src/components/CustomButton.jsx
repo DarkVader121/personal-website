@@ -10,12 +10,13 @@ const CustomButton = ({title, btnColor, btnSize, btnType,btnVariant, containerSt
         variant={ `${btnVariant}` }
         className={ `${containerStyles}` }
         onClick={handleClick}
+        id={`${textStyles}`}
     >
         <div className='flex' >
             <i className={`${leftIcon}`} ></i>
-            <span className={`${textStyles}`}>
+            <span>
             {title}
-        </span>
+            </span>
         </div>
     </Button>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
-import {CustomButton} from '../components'
-import { Typography } from '@material-tailwind/react'
+import {ChurchDrawer} from '../components'
+import { Typography, Button } from '@material-tailwind/react'
 import church__banner from '../public/church__banner.png'
 
 const Project1 = () => {
@@ -15,22 +15,13 @@ const Project1 = () => {
         Church Monitoring System
       </Typography>
       <div className='mt-5 flex gap-2'>
-      <CustomButton
-       btnSize={`sm`}
-       btnColor={`black`}
-       btnVariant={`outlined`}
-       title={`View Details`}
-       leftIcon={`fa-solid fa-circle-info fa-2xl flex items-center mr-1`}
-       containerStyles={`p-3`}
-      />
-      <CustomButton
-       btnSize={`sm`}
-       btnColor={`black`}
-       btnVariant={`outlined`}
-       title={`Github`}
-       leftIcon={`GitHub fa-brands fa-github fa-2xl flex items-center mr-1`}
-       containerStyles={`p-3`}
-      />
+      <ChurchDrawer/>
+        <div className='border-solid flex items-center rounded-full  border-black'>
+          <li className='fa-brands fa-github fa-2xl mr-1 '></li>
+        <a href="https://github.com/DarkVader121/Church-Monitoring-System-" rel="noopener" target="_blank">
+            Github
+        </a>
+        </div>
       </div>
     </div>
     <div className='col-span-7'>

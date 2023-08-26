@@ -6,7 +6,7 @@ import { Hoobies } from '../constants'
 const About = () => {
   return (
     <>
-    <div className='mb-10  lg:px-5'>
+    <div className='mb-10 lg:px-5'>
         <Typography
             variant="lead"
             id="Inter"
@@ -39,7 +39,7 @@ const About = () => {
             variant="lead"
             id="Inter"
             className="mt-5 "
-        >    
+        >
         I have a strong background in BS Information Technology with a specialization in React and Laravel, backed by over 480 hours of hands-on experience during my On-The-Job Training (OJT). My expertise spans both frontend and backend development, and I've honed my skills through education, including the attainment of a Meta Front-End Developer Professional Certificate. Additionally, I have expanded my proficiency in mobile app development through online courses in React Native. My commitment to staying up-to-date with the latest technologies and frameworks ensures that I can deliver top-notch solutions in the dynamic field of Information Technology.
         </Typography>
 

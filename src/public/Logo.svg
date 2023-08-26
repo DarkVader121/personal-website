@@ -1,0 +1,22 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+	<title>New Project</title>
+	<defs>
+		<image  width="1200" height="630" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAAJ2AQMAAAB1jukfAAAAAXNSR0IB2cksfwAAAANQTFRFAAAAp3o92gAAAAF0Uk5TAEDm2GYAAABzSURBVHic7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeDXOpAAFtMMXeAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 192px;fill: #000000;font-weight: 700;font-family: "Inter-Bold", "Inter" } 
+		.s1 { fill: #000000 } 
+		.t2 { font-size: 39px;fill: #000000;font-weight: 500;font-family: "Montserrat-Medium", "Montserrat" } 
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+	<text id="ERRON" style="transform: matrix(1,0,0,1,249.389,344.611)" >
+		<tspan x="0" y="0" class="t0">E</tspan><tspan  y="0" class="t0">R</tspan><tspan  y="0" class="t0">R</tspan><tspan  y="0" class="t0">O</tspan><tspan  y="0" class="t0">N</tspan><tspan  y="0" class="t0">
+</tspan>
+	</text>
+	<path id="Shape 1" class="s1" d="m260 358h418v27h-418z"/>
+	<text id="John 2023" style="transform: matrix(1,0,0,1,696.881,382.982)" >
+		<tspan x="0" y="0" class="t2">J</tspan><tspan  y="0" class="t2">o</tspan><tspan  y="0" class="t2">h</tspan><tspan  y="0" class="t2">n</tspan><tspan  y="0" class="t2"> </tspan><tspan  y="0" class="t2">2</tspan><tspan  y="0" class="t2">0</tspan><tspan  y="0" class="t2">2</tspan><tspan  y="0" class="t2">3</tspan><tspan  y="0" class="t2">
+</tspan>
+	</text>
+</svg>

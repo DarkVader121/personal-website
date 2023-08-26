@@ -1,6 +1,6 @@
 import React from 'react'
 import { Typography } from '@material-tailwind/react'
-import { CustomButton } from '../components'
+import { CustomButton, AdoptDrawer } from '../components'
 import adopt__banner from '../public/adopt__banner.png'
 
 
@@ -16,30 +16,14 @@ const Project3 = () => {
             Adopt
           </Typography>
           <div className='mt-5 flex gap-2'>
-          <CustomButton
-                btnSize={`sm`}
-                btnColor={`black`}
-                btnVariant={`outlined`}
-                title={`View Details`}
-                leftIcon={`fa-solid fa-circle-info fa-2xl flex items-center mr-1`}
-                containerStyles={`p-3`}
-                />
-                <CustomButton
-                btnSize={`sm`}
-                btnColor={`black`}
-                btnVariant={`outlined`}
-                title={`GitHub`}
-                leftIcon={`fa-brands fa-github fa-2xl flex items-center mr-1`}
-                containerStyles={`p-3`}
-                />
-                <CustomButton
-                btnSize={`sm`}
-                btnColor={`black`}
-                btnVariant={`gradient`}
-                title={`Open Project`}
-                leftIcon={` fa-solid fa-globe fa-2xl flex items-center mr-1`}
-                containerStyles={`p-3`}
-                />
+                <AdoptDrawer/>
+                <div className='border-solid flex items-center rounded-full  border-black'>
+                  <li className='fa-brands fa-github fa-2xl mr-1 '></li>
+                  <a href="https://github.com/DarkVader121/adopt-js" rel="noopener" target="_blank">
+                      Github
+                  </a>
+                </div>
+
           </div>
         </div>
         <div className='col-span-7'>

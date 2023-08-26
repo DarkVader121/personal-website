@@ -2,6 +2,7 @@ import { Collapse, IconButton, Typography } from '@material-tailwind/react'
 import React from 'react'
 import { useState } from 'react'
 import {Link} from 'react-scroll'
+import Logo from '../public/Logo.png'
 
 
 const Navigation = () => {
@@ -24,37 +25,16 @@ const Navigation = () => {
         id="Inter"
         className="px-10 py-2 drop-shadow-md text-lg  hover:scale-150 duration-300 "
       >
-        <Link to="Projects" spy={true} smooth={true} duration={500}>
+        <Link to="Projects" spy={true} smooth={true} duration={2000}>
           Projects
         </Link>
       </Typography>
       <Typography
-        
-        variant="paragraph"
-        id="Inter"
-        className="px-10 py-2 drop-shadow-md text-lg hover:scale-150 duration-300 "
-      >
-        <Link to="Program" spy={true} smooth={true} duration={500}>
-          Program Stack
-        </Link>
-      </Typography>
-      <Typography
-       
-        variant="paragraph"
-        id="Inter"
-        className="px-10 py-2 drop-shadow-md text-lg hover:scale-150 duration-300 "
-      >
-        <Link to="Experience" spy={true} smooth={true} duration={500}>
-          Experience
-        </Link>
-      </Typography>
-      <Typography
-        
         variant="paragraph"
         id="Inter"
         className="px-10 py-2 drop-shadow-md text-lg  hover:scale-150 duration-300 "
       >
-        <Link to="Certificates" spy={true} smooth={true} duration={500}>
+        <Link to="Certificate" spy={true} smooth={true} duration={2000}>
           Certificates
         </Link>
       </Typography>
@@ -64,7 +44,27 @@ const Navigation = () => {
         id="Inter"
         className="px-10 py-2 drop-shadow-md text-lg hover:scale-150 duration-300 "
       >
-        <Link to="Videos" spy={true} smooth={true} duration={500}>
+        <Link to="Program" spy={true} smooth={true} duration={2000}>
+          Program Stack
+        </Link>
+      </Typography>
+      <Typography
+       
+        variant="paragraph"
+        id="Inter"
+        className="px-10 py-2 drop-shadow-md text-lg hover:scale-150 duration-300 "
+      >
+        <Link to="Experience" spy={true} smooth={true} duration={2000}>
+          Experience
+        </Link>
+      </Typography>
+      <Typography
+        
+        variant="paragraph"
+        id="Inter"
+        className="px-10 py-2 drop-shadow-md text-lg hover:scale-150 duration-300 "
+      >
+        <Link to="Videos" spy={true} smooth={true} duration={2000}>
           Videos
         </Link>
       </Typography>
@@ -72,16 +72,10 @@ const Navigation = () => {
     </nav>
   )
   return (
-    <div className=' max-w-screen lg:px-5 lg:py-2'>
+    <div className=' max-w-screen lg:px-5 lg:py-2 bg-blue-gray-1'>
       <div className='mx-auto flex items-center justify-between '>
         <button>
-          <Typography
-            variant='h1'
-            id="Inter"
-            className="text-black flex"
-          >
-            Erron &nbsp; <div className='lg:hidden'>John</div>
-          </Typography>
+          <img src={Logo} width={200} height={100} alt="Logo" />
         </button>
         <div className='hidden lg:block'>{NavList}</div>
         <IconButton

@@ -26,18 +26,18 @@ function App() {
           <section id="Projects">
             <Projects/>
           </section>
-          {/* <section id="Program">
+          <section id="Certificate">
+            <Certificate/>
+          </section>
+          <section id="Program">
             <ProgramStack />
           </section>
           <section id="Experience">
             <Experience/>
           </section>
-          <section id="Certificate">
-            <Certificate/>
-          </section>
           <section id="Videos">
             <Videos/>
-          </section> */}
+          </section>
     </div>
 
     // <div>
