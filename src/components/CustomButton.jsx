@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '@material-tailwind/react'
 
-const CustomButton = ({title, btnColor, btnSize, btnType,btnVariant, containerStyles, textStyles, handleClick, leftIcon }) => {
+const CustomButton = ({title, btnColor, btnSize, btnType,btnVariant,btnValue, containerStyles, textStyles, handleClick, leftIcon, isDisabled }) => {
   return (
     <Button
         type={ btnType || "button"}
@@ -11,6 +11,8 @@ const CustomButton = ({title, btnColor, btnSize, btnType,btnVariant, containerSt
         className={ `${containerStyles}` }
         onClick={handleClick}
         id={`${textStyles}`}
+        value={`${btnValue}`}
+        disabled={isDisabled}
     >
         <div className='flex' >
             <i className={`${leftIcon}`} ></i>

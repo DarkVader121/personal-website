@@ -3,7 +3,7 @@ import { Typography } from '@material-tailwind/react'
 
 const BackendDevelopment = () => {
     return (
-        <div>
+        <div className='hover:scale-105 duration-300'>
             <Typography
                 variant="h1"
                 id="Inter"

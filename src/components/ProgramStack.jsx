@@ -3,10 +3,15 @@ import { Typography } from '@material-tailwind/react'
 import { BackendDevelopment, FrontendDevelopment } from '../components'
 import visual from '../public/visual.png'
 import canva from '../public/canva.png'
+import {motion} from 'framer-motion'
 
 const ProgramStack = () => {
   return (
-    <>
+    <motion.div
+    initial={{opacity:0}}
+    whileInView={{opacity:1}}
+    transition={{duration:2}}
+    >
     <div className='mt-10 px-5 py-5 pt-15 bg-gray-500'>
         <Typography
             variant="lead"
@@ -32,7 +37,7 @@ const ProgramStack = () => {
         </div>
     </div>
 
-    <div className='mt-20 pb-20'> 
+    <div className='mt-20 pb-20 overflow-hidden'> 
         <Typography
             variant="h1"
             id="Inter"
@@ -42,7 +47,7 @@ const ProgramStack = () => {
         </Typography>
         <div className='grid lg:grid-cols-6 mt-10 justify-items-center'>
           <div>
-            <div className='grid grid-cols-4 mt-5'>
+            <div className='grid grid-cols-4 mt-5 hover:scale-110 duration-300'>
                   <div className='flex items-center'>
                       <img src={visual} width={50} height={50} alt="" />
                   </div>
@@ -65,7 +70,7 @@ const ProgramStack = () => {
             </div>
           </div>
           <div>
-            <div className='grid grid-cols-4 mt-5'>
+            <div className='grid grid-cols-4 mt-5 hover:scale-110 duration-300'>
                     <div className='flex items-center'>
                         <img src={canva} width={50} height={50} alt="" />
                     </div>
@@ -88,7 +93,7 @@ const ProgramStack = () => {
             </div>
           </div>
           <div>
-            <div className='grid grid-cols-4 mt-5'>
+            <div className='grid grid-cols-4 mt-5 hover:scale-110 duration-300'>
                   <div className='flex items-center'>
                       <li className='fa-brands fa-jira fa-2xl text-5xl '></li>
                   </div>
@@ -111,7 +116,7 @@ const ProgramStack = () => {
             </div>
           </div>
           <div>
-            <div className='grid grid-cols-4 mt-5'>
+            <div className='grid grid-cols-4 mt-5 hover:scale-110 duration-300'>
                   <div className='flex items-center'>
                       <li className='fa-brands fa-figma fa-2xl text-5xl '></li>
                   </div>
@@ -134,7 +139,7 @@ const ProgramStack = () => {
             </div>
           </div>
           <div>
-            <div className='grid grid-cols-4 mt-5'>
+            <div className='grid grid-cols-4 mt-5 hover:scale-110 duration-300'>
                   <div className='flex items-center'>
                       <li className='fa-brands fa-microsoft fa-2xl text-5xl '></li>
                   </div>
@@ -157,7 +162,7 @@ const ProgramStack = () => {
             </div>
           </div>
           <div>
-            <div className='grid grid-cols-4 mt-5'>
+            <div className='grid grid-cols-4 mt-5 hover:scale-110 duration-300'>
                     <div className='flex items-center'>
                         <img src="https://blog.testproject.io/wp-content/uploads/2020/03/cypress-1024x553.png" width={100} height={50} alt="" />
                     </div>
@@ -181,7 +186,7 @@ const ProgramStack = () => {
           </div>
         </div>
     </div>
-    </>
+    </motion.div>
   )
 }
 

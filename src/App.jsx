@@ -1,6 +1,8 @@
+import { Button } from 'react-scroll';
 import './App.css'
-import {Loader, Navigation, LandingPage, About, Projects, ProgramStack, Experience, Certificate, Videos } from './components'
+import {Loader, Navigation, LandingPage, About, Projects, ProgramStack, Experience, Certificate, Videos, ContactMe, SpeedDialNav  } from './components'
 import { useState, useEffect } from "react"; 
+
 
 
 function App() {
@@ -15,10 +17,13 @@ function App() {
   }, [])
 
   return (
+    <>
     <div>
-       <Navigation/>
-          <section >
-          <LandingPage/>
+
+       
+          <section id="LandPage">
+          <Navigation/>
+          <LandingPage />
           </section>
           <section id="About" className='pt-10'>
             <About/>
@@ -38,22 +43,50 @@ function App() {
           <section id="Videos">
             <Videos/>
           </section>
+          <section id="Contact">
+            <ContactMe/>
+          </section>
     </div>
-
-    // <div>
-    //   { loading ? (
-    //     <div className={loading ? 'loader-fade-out' : ""}>
-    //     <Loader/>
-    //     </div>
-    //   ) : (
-    //     <>
-    //     <div className={loading ? "" : 'loader-fade-in'}>
-    //       <Navigation/>
-    //       <LandingPage/>
-    //     </div>
-    //     </>
-    //   )}
-    // </div>
+    <SpeedDialNav/>
+      {/* { loading ? (
+        <div className={loading ? 'loader-fade-out' : ""}>
+       <Loader/>
+        </div>
+       ) : (
+         <>
+         <div >
+         <div>
+            <Navigation/>
+                <section  >
+                <LandingPage/>
+                </section>
+                <section id="About" className='loader-fade-in pt-10'>
+                  <About/>
+                </section>
+                <section id="Projects">
+                  <Projects/>
+                </section>
+                <section id="Certificate">
+                  <Certificate/>
+                </section>
+                <section id="Program">
+                  <ProgramStack />
+                </section>
+                <section id="Experience">
+                  <Experience/>
+                </section>
+                <section id="Videos">
+                  <Videos/>
+                </section>
+                <section id="Contact">
+                  <ContactMe/>
+                </section>
+          </div>
+         </div>
+         </>
+       )} */}
+  
+    </>
   )
 }
 

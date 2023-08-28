@@ -4,7 +4,7 @@ import tailwind__2 from '../public/tailwind__2.png'
 
 const FrontendDevelopment = () => {
   return (
-    <div>
+    <div className='hover:scale-105 duration-300'>
         <Typography
             variant="h1"
             id="Inter"

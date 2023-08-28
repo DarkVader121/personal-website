@@ -25,7 +25,11 @@ const Certificate = () => {
 
   const handleOpen = () => setOpen(!open);
   return (
-    <>
+    <motion.div
+    initial={{opacity:0}}
+    whileInView={{opacity:1}}
+    transition={{duration:2}}
+    >
            <CertificateModal 
             open={open}
             handleOpen={handleOpen}
@@ -57,66 +61,66 @@ const Certificate = () => {
     />
     </a>
     <div className='grid lg:grid-cols-3 justify-items-center gap-5 mt-5'>
-      <div onClick={() => {setSelectedId("Frontend_Certificate") 
+      <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Frontend_Certificate") 
                            setOpen(true);}}>
           <img src={Frontend_Certificate} className='w-full' alt="" />
       </div>
-      <div onClick={() => {setSelectedId("Advance_react") 
+      <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Advance_react") 
                            setOpen(true);}}>
         <img src={Advance_react} className='w-full' />
       </div>
-      <div onClick={() => {setSelectedId("Basic") 
+      <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Basic") 
                            setOpen(true);}}>
         <img src={Basic} className='w-full' />
       </div>
     </div>
 
     <div className='grid lg:grid-cols-3 justify-items-center gap-5 mt-5'>
-      <div onClick={() => {setSelectedId("Capstone") 
+      <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Capstone") 
                            setOpen(true);}}>
           <img src={Capstone} className='w-full' alt="" />
       </div>
-      <div onClick={() => {setSelectedId("In_depth") 
+      <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("In_depth") 
                            setOpen(true);}}>
         <img src={In_depth} className='w-full' />
       </div>
-      <div onClick={() => {setSelectedId("Javascript") 
+      <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Javascript") 
                            setOpen(true);}}>
         <img src={Javascript} className='w-full' />
       </div>
     </div>
 
     <div className='grid lg:grid-cols-3 justify-items-center gap-5 mt-5'>
-    <div onClick={() => {setSelectedId("Introduction") 
+    <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Introduction") 
                            setOpen(true);}}>
           <img src={Introduction} className='w-full' alt="" />
       </div>
-      <div onClick={() => {setSelectedId("UX_UI") 
+      <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("UX_UI") 
                            setOpen(true);}}>
         <img src={UX_UI} className='w-full' />
       </div>
-      <div onClick={() => {setSelectedId("Interview") 
+      <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Interview") 
                            setOpen(true);}}>
         <img src={Interview} className='w-full' />
       </div>
     </div>
 
     <div className='grid lg:grid-cols-3 justify-items-center gap-5 mt-5'>
-    <div onClick={() => {setSelectedId("Version") 
+    <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Version") 
                            setOpen(true);}}>
           <img src={Version} className='w-full' alt="" />
       </div>
-      <div onClick={() => {setSelectedId("React_native") 
+      <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("React_native") 
                            setOpen(true);}}>
           <img src={React_native} className='w-full' alt="" />
       </div>
-      <div onClick={() => {setSelectedId("Introduction_mobile") 
+      <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Introduction_mobile") 
                            setOpen(true);}}>
           <img src={Introduction_mobile} className='w-full' alt="" />
       </div>
     </div>
 </div>
-</>
+</motion.div>
   )
 }
 

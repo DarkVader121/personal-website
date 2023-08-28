@@ -1,12 +1,13 @@
 import React from 'react'
-import { Typography } from '@material-tailwind/react'
+import { Typography,Carousel } from '@material-tailwind/react'
 import { CustomButton, AdoptDrawer } from '../components'
 import adopt__banner from '../public/adopt__banner.png'
-
+import adopt__1 from '../public/adopt__1.png'
+import adopt__2 from '../public/adopt__2.png'
 
 const Project3 = () => {
     return (
-        <div className='grid lg:grid-cols-9 mt-10'>
+        <div className='grid lg:grid-cols-9 mt-5'>
         <div className='col-span-2 inline-block'>
           <Typography
             variant="h1"
@@ -26,13 +27,27 @@ const Project3 = () => {
 
           </div>
         </div>
-        <div className='col-span-7'>
+        <div className='col-span-7 px-10 pb-10'>
+        <Carousel 
+          transition={{ duration: 2 }} 
+          className="rounded-xl"      
+          >
           <img
-              src={adopt__banner}
-              alt="image 1"
-              width={1200}
-              className=" object-cover ml-auto mr-auto"
-            />
+            src={adopt__banner}
+            alt="image 1"
+            className=" w-full object-cover"
+          />
+          <img
+            src={adopt__1}
+            alt="image 2"
+            className="h-full w-full object-cover"
+          />
+          <img
+            src={adopt__2}
+            alt="image 3"
+            className="h-full w-full object-cover"
+          />
+        </Carousel>
         </div>
       </div>
       )

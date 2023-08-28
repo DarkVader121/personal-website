@@ -2,10 +2,15 @@ import React from 'react'
 import { Typography } from '@material-tailwind/react'
 import { Youtube_links } from '../constants'
 import { YoutubeFrame } from '../components'
+import {motion} from 'framer-motion'
 
 const Videos = () => {
   return (
-    <div className='lg:p-5'>
+    <motion.div
+    initial={{opacity:0}}
+    whileInView={{opacity:1}}
+    transition={{duration:2}}
+    className='lg:p-5'>
         <Typography
             variant="lead"
             id="Inter"
@@ -28,21 +33,7 @@ const Videos = () => {
           />
         </div>
       ))}
-      
-      
-            {/* {Hoobies.map((Hooby) => (
-                <div key={Hooby} value={Hooby}>
-                    <Typography
-                        variant="paragraph"
-                        id="Inter"
-                        className=""
-                    >
-                    {Hooby}
-                    </Typography>
-                </div>
-            ))
-            } */}
-    </div>
+    </motion.div>
   )
 }
 

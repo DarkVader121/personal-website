@@ -6,29 +6,40 @@ import { Typography,
          TimelineHeader,
          TimelineIcon,
          TimelineBody, } from '@material-tailwind/react'
+import {motion} from 'framer-motion'
 
 const Experience = () => {
   return (
-    <div className='pt-5'>
+    <motion.div
+    initial={{
+      opacity:0,
+      backgroundColor:'white'
+    }}
+    whileInView={{
+      opacity:1, 
+      backgroundColor:'black' 
+    }}
+    transition={{duration:2}}
+    className='pt-5 '>
         <Typography
             variant="lead"
             id="Inter"
-            className="font-bold text-center"
+            className="font-bold text-center text-white"
         >
            My Professional 
         </Typography>
         <Typography
             variant="h1"
             id="Inter"
-            className="text-9xl mt-10 text-center"
+            className="text-9xl text-white mt-10 text-center"
         >
             Work Experience
         </Typography>
         <div className="mx-auto  w-[40rem] mt-20 mb-20">
-      <Timeline>
-        <TimelineItem>
-          <TimelineConnector />
-          <TimelineHeader className="h-3">
+      <Timeline className='text-white'>
+        <TimelineItem >
+          <TimelineConnector/>
+          <TimelineHeader className="h-3 ">
             <TimelineIcon />
             <div className='inline-block items-center'>
             <Typography variant="h3" id="Inter" className="">
@@ -39,7 +50,7 @@ const Experience = () => {
             </Typography>
             </div>
           </TimelineHeader>
-          <TimelineBody className="pb-[5rem]">
+          <TimelineBody className="pb-[5rem] ">
             <Typography variant="lead" id="Inter" className="mt-10">
             During the enriching experience of my internship in May 2022, I had the privilege to work with GLOBALOR PHILIPPINES, located in the scenic locale of Bohol, Philippines. In this role, I embraced a dual responsibility as both a Frontend Developer and a Quality Assurance Tester, harnessing my skills and expertise in ReactJS and Laravel to contribute to the team's success and growth.
             </Typography>
@@ -83,7 +94,7 @@ const Experience = () => {
         </TimelineItem>
       </Timeline>
     </div>
-    </div>
+    </motion.div>
   )
 }
 

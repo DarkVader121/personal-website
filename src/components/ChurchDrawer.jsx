@@ -20,12 +20,12 @@ const ChurchDrawer = () => {
     textStyles={`Inter`}
     handleClick={openDrawer}
    />
-    <Drawer open={open} onClose={closeDrawer} className='p-4' overlay={false} size={400}>
-        <div className='mb-6 flex items-start justify-around'>
-            <Typography variant="h1" id="Inter" color="black" className="font-bold">
+    <Drawer open={open} onClose={closeDrawer} className='p-4 bg-gray-500' overlay={false} size={400}>
+        <div className='mb-6 flex justify-between'>
+            <Typography variant="h1" id="Inter" color="black" className="font-bold text-white">
                 Church Monitoring System
             </Typography>
-            <IconButton variant="text" color="blue-gray" onClick={closeDrawer}>
+            <IconButton variant="text"  onClick={closeDrawer}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -45,7 +45,7 @@ const ChurchDrawer = () => {
         <Typography
             variant="lead"
             id="Inter"
-            className="mb-8 pr-4"
+            className="mb-8 pr-4 "
         >
             During my college days, I worked on my thesis project,
             which was a Church Monitoring System. This system was 

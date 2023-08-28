@@ -18,6 +18,10 @@ import CertificateModal from "./CertificateModal";
 import FrontendDevelopment from "./FrontendDevelopment";
 import BackendDevelopment from "./BackendDevelopment";
 import YoutubeFrame from "./YoutubeFrame";
+import ContactMe from "./ContactMe";
+import AlertMessage from "./AlertMessage";
+import Practice from "./Practice";
+import SpeedDialNav from "./SpeedDialNav";
 export {
     Navigation,
     Loader, 
@@ -39,4 +43,8 @@ export {
     FrontendDevelopment,
     BackendDevelopment,
     YoutubeFrame,
+    ContactMe, 
+    AlertMessage,
+    Practice,
+    SpeedDialNav,
 }

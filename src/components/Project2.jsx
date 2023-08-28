@@ -1,7 +1,9 @@
 import React from 'react'
-import { Typography } from '@material-tailwind/react'
-import { CustomButton, CarDrawer } from '../components'
+import { Typography, Carousel } from '@material-tailwind/react'
+import {  CarDrawer } from '../components'
 import car__banner from '../public/car__banner.png'
+import car__1 from '../public/cars__1.png'
+import car__2 from '../public/cars__2.png'
 
 const Project2 = () => {
     return (
@@ -24,13 +26,27 @@ const Project2 = () => {
                 </div>
           </div>
         </div>
-        <div className='col-span-7'>
+        <div className='col-span-7 px-10 pb-10'>
+        <Carousel 
+          transition={{ duration: 2 }} 
+          className="rounded-xl"      
+          >
           <img
-              src={car__banner}
-              alt="image 1"
-              width={1200}
-              className=" object-cover ml-auto mr-auto"
-            />
+            src={car__banner}
+            alt="image 1"
+            className=" w-full object-cover"
+          />
+          <img
+            src={car__1}
+            alt="image 2"
+            className="h-full w-full object-cover"
+          />
+          <img
+            src={car__2}
+            alt="image 3"
+            className="h-full w-full object-cover"
+          />
+        </Carousel>
         </div>
       </div>
       )

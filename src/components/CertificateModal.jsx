@@ -1,5 +1,5 @@
 import React from 'react'
-import {Dialog, DialogHeader, DialogFooter} from '@material-tailwind/react'
+import {Dialog} from '@material-tailwind/react'
 import {CustomButton} from "../components"
 import Frontend_Certificate from '../public/Coursera Certificate/Frontend_Certificate.png';
 import Advance_react from '../public/Coursera Certificate/Advance_react.png';
@@ -13,7 +13,7 @@ import Introduction from '../public/Coursera Certificate/Introduction.png'
 import Version from '../public/Coursera Certificate/Version.png'
 import React_native from '../public/Coursera Certificate/React_native.png'
 import Introduction_mobile from '../public/Coursera Certificate/Introduction_mobile.png'
-const CertificateModal = ({open, handleOpen, selectedId, setSelectedId}) => {
+const CertificateModal = ({open, handleOpen, selectedId}) => {
     
     let path; 
     
@@ -43,8 +43,7 @@ const CertificateModal = ({open, handleOpen, selectedId, setSelectedId}) => {
         path = Introduction_mobile;
     } 
   return (
-   <Dialog open={open} handler={handleOpen} size={1000}>
-    <DialogHeader>{selectedId}</DialogHeader>
+   <Dialog open={open} handler={handleOpen} size={'lg'} >
     {selectedId && (
         <div layoutId={selectedId}>
             {
@@ -52,14 +51,6 @@ const CertificateModal = ({open, handleOpen, selectedId, setSelectedId}) => {
             }
             </div>
     )}
-        <DialogFooter>
-            <CustomButton
-                title={`Close`}
-                variant={`gradient`}
-                btnSize={`md`}
-                handleClick={handleOpen}
-            />
-        </DialogFooter>
     </Dialog>
   )
 }

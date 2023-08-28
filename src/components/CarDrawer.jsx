@@ -20,9 +20,9 @@ const CarDrawer = () => {
     textStyles={`Inter`}
     handleClick={openDrawer}
    />
-    <Drawer open={open} onClose={closeDrawer} className='p-4' overlay={false} size={400}>
-        <div className='mb-6 flex items-start justify-around'>
-            <Typography variant="h1" id="Inter" color="black" className="font-bold">
+    <Drawer open={open} onClose={closeDrawer} className='p-4 bg-gray-500' overlay={false} size={400}>
+        <div className='mb-6 flex justify-between'>
+            <Typography variant="h1" id="Inter" className="font-bold text-white">
                 Rent a Car
             </Typography>
             <IconButton variant="text" color="blue-gray" onClick={closeDrawer}>
@@ -51,9 +51,12 @@ const CarDrawer = () => {
         </Typography>
                 <div className='border-solid flex items-center rounded-full  border-black'>
                   <li className='fa-solid fa-globe fa-2xl mr-1 '></li>
-                  <a href="https://rent-a-car-2i9b.vercel.app/" rel="noopener" target="_blank">
-                      View Site
+                  <li id='Inter' className='hover:text-white hover:scale-105 duration-300'>
+                  <a href="https://rent-a-car-2i9b.vercel.app/" rel="noopener" target="_blank" >
+                     https://rent-a-car-2i9b.vercel.app/
                   </a>
+                  </li>
+
                 </div>
     </Drawer>
     </React.Fragment>

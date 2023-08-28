@@ -20,12 +20,12 @@ const AdoptDrawer = () => {
     textStyles={`Inter`}
     handleClick={openDrawer}
    />
-    <Drawer open={open} onClose={closeDrawer} className='p-4' overlay={false} size={400}>
-        <div className='mb-6 flex items-start justify-around'>
-            <Typography variant="h1" id="Inter" color="black" className="font-bold">
+    <Drawer open={open} onClose={closeDrawer} className='p-4 bg-gray-500' overlay={false} size={400}>
+        <div className='mb-6 flex justify-between'>
+            <Typography variant="h1" id="Inter" color="black" className="font-bold text-white">
                 Adopt
             </Typography>
-            <IconButton variant="text" color="blue-gray" onClick={closeDrawer}>
+            <IconButton variant="text" onClick={closeDrawer}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -50,9 +50,11 @@ const AdoptDrawer = () => {
                 I've recently wrapped up my personal project called "Adopt," constructed with ReactJS. To display data, I utilized an API from RapidAPI, which allowed me to showcase information to users effectively. Material Tailwind was used for the website's front-end design, giving it a sleek and modern appearance without direct user interaction with the API.        </Typography>
                 <div className='border-solid flex items-center rounded-full  border-black'>
                   <li className='fa-solid fa-globe fa-2xl mr-1 '></li>
+                  <li id="Inter" className='hover:text-white hover:scale-105 duration-300'>
                   <a href="https://adopt-cyan.vercel.app/" rel="noopener" target="_blank">
-                      View Site
+                    https://adopt-cyan.vercel.app/
                   </a>
+                  </li>
                 </div>
     </Drawer>
     </React.Fragment>

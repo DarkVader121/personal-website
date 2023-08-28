@@ -3,80 +3,106 @@ import React from 'react'
 import { useState } from 'react'
 import {Link} from 'react-scroll'
 import Logo from '../public/Logo.png'
+import {motion} from 'framer-motion'
 
 
 const Navigation = () => {
   const [openNav, setOpenNav] = useState(false)
 
   const NavList = (
-    <nav>
-    <ul className='mb-4 mt-4 md:inline-block lg:flex  lg:mb-0 lg:mt-0  lg:items-center lg:gap-6'>
+    <motion.nav 
+    initial={{
+        x:'-100vw', 
+        opacity: 0, 
+    }}
+    animate={{
+        x:0, 
+        opacity: 1, 
+    }}
+    transition={{ duration:2}}
+    >
+    <ul className='mb-4 mt-4 md:inline-block lg:flex  lg:mb-0 lg:mt-0  lg:items-center lg:gap-6 overflow-hidden'>
       <Typography
         variant="paragraph"
         id="Inter"
-        className="px-10 py-2 drop-shadow-md text-lg  hover:scale-150 duration-300 "
+        className="px-10 py-2 drop-shadow-md text-lg  hover:scale-150 duration-300 hover:bg-black hover:text-white hover:font-bold  "
       >
-         <Link to="About" spy={true} smooth={true}  duration={2000}>
+        <button>
+         <Link to="About" spy={true} smooth={true}  duration={3000}>
           About
          </Link> 
+         </button>
       </Typography>
       <Typography
         variant="paragraph"
         id="Inter"
-        className="px-10 py-2 drop-shadow-md text-lg  hover:scale-150 duration-300 "
+        className="px-10 py-2 drop-shadow-md text-lg  hover:scale-150 duration-300 hover:bg-black hover:text-white hover:font-bold  "
       >
-        <Link to="Projects" spy={true} smooth={true} duration={2000}>
+        <button>
+        <Link to="Projects" spy={true} smooth={true} duration={3000}>
           Projects
         </Link>
+        </button>
       </Typography>
       <Typography
         variant="paragraph"
         id="Inter"
-        className="px-10 py-2 drop-shadow-md text-lg  hover:scale-150 duration-300 "
+        className="px-10 py-2 drop-shadow-md text-lg  hover:scale-150 duration-300 hover:bg-black hover:text-white hover:font-bold  "
       >
-        <Link to="Certificate" spy={true} smooth={true} duration={2000}>
+        <button>
+        <Link to="Certificate" spy={true} smooth={true} duration={3000}>
           Certificates
         </Link>
+        </button>
       </Typography>
       <Typography
         
         variant="paragraph"
         id="Inter"
-        className="px-10 py-2 drop-shadow-md text-lg hover:scale-150 duration-300 "
+        className="px-10 py-2 drop-shadow-md text-lg hover:scale-150 duration-300 hover:bg-black hover:text-white hover:font-bold  "
       >
-        <Link to="Program" spy={true} smooth={true} duration={2000}>
+        <button>
+        <Link to="Program" spy={true} smooth={true} duration={3000}>
           Program Stack
         </Link>
+       </button>
+
       </Typography>
       <Typography
-       
         variant="paragraph"
         id="Inter"
-        className="px-10 py-2 drop-shadow-md text-lg hover:scale-150 duration-300 "
+        className="px-10 py-2 drop-shadow-md text-lg hover:scale-150 duration-300 hover:bg-black hover:text-white hover:font-bold  "
       >
-        <Link to="Experience" spy={true} smooth={true} duration={2000}>
+         <button>
+        <Link to="Experience" spy={true} smooth={true} duration={3000}>
           Experience
         </Link>
+        </button>
       </Typography>
       <Typography
         
         variant="paragraph"
         id="Inter"
-        className="px-10 py-2 drop-shadow-md text-lg hover:scale-150 duration-300 "
+        className="px-10 py-2 drop-shadow-md text-lg hover:scale-150 duration-300 hover:bg-black hover:text-white hover:font-bold  "
       >
-        <Link to="Videos" spy={true} smooth={true} duration={2000}>
+         <button>
+        <Link to="Videos"  smooth={true} duration={4000}>
           Videos
         </Link>
+        </button>
       </Typography>
     </ul>
-    </nav>
+    </motion.nav>
   )
   return (
     <div className=' max-w-screen lg:px-5 lg:py-2 bg-blue-gray-1'>
       <div className='mx-auto flex items-center justify-between '>
-        <button>
+        <motion.button
+          whileHover={{ scale:1.1}}
+          whileTap={{ scale: 0.9}}
+        >
           <img src={Logo} width={200} height={100} alt="Logo" />
-        </button>
+        </motion.button>
         <div className='hidden lg:block'>{NavList}</div>
         <IconButton
           variant="text"

@@ -1,12 +1,17 @@
 import { Typography } from '@material-tailwind/react'
 import React from 'react'
 import { Hoobies } from '../constants'
+import {motion} from 'framer-motion'
 
 
 const About = () => {
   return (
-    <>
-    <div className='mb-10 lg:px-5'>
+    <motion.div
+        initial={{opacity:0}}
+        whileInView={{opacity:1}}
+        transition={{duration:2}}
+    >
+    <div className='mb-10 lg:px-5 overflow-hidden'>
         <Typography
             variant="lead"
             id="Inter"
@@ -44,11 +49,14 @@ const About = () => {
         </Typography>
 
         <div className='grid lg:grid-cols-2 mt-20 mb-20'>
-            <div className='grid lg:grid-cols-3'>
+            <motion.div 
+            whileHover={{ scale:1.1}}
+            whileTap={{ scale: 0.9}}
+            className='grid lg:grid-cols-3 mt-2'>
                 <div className='flex justify-end mt-10'>
                     <li className='fa-solid fa-desktop fa-2xl' style={{fontSize:'4rem'}}></li>
                 </div>
-                <div className='col-span-2 justify-start'>
+                    <div className='col-span-2 justify-start'>
                     <Typography
                         variant='h1'
                         id="Inter"
@@ -71,8 +79,11 @@ const About = () => {
                          Frontend + Backend Development
                     </Typography>
                 </div>
-            </div>
-            <div className='grid grid-cols-3'>
+            </motion.div>
+            <motion.div 
+            whileHover={{ scale:1.1}}
+            whileTap={{ scale: 0.9}}
+            className='grid grid-cols-3'>
                 <div className='flex justify-end mt-10'>
                     <li className='fa-solid fa-graduation-cap fa-2xl' style={{fontSize:'4rem'}}></li>
                 </div>
@@ -99,7 +110,7 @@ const About = () => {
                        <b> 30 days </b> Meta Front-End Developer Professional Certificate <br /> <div className='ml-20'>   and React Native (Online)</div>
                     </Typography>
                 </div>
-            </div>
+            </motion.div>
         </div>
     </div>
     <div className='bg-gray-500 lg:px-5 lg:py-2'>
@@ -115,7 +126,7 @@ const About = () => {
                  Others 
                 </Typography>
                 <Typography 
-                    className="lead"
+                    variant="lead"
                     id="Inter"
                     className="ml-3 font-bold"
                 >
@@ -143,7 +154,7 @@ const About = () => {
         </div>
 
     </div>
-    </>
+    </motion.div>
   )
 }
 
