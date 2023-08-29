@@ -12,40 +12,42 @@ const ProgramStack = () => {
     whileInView={{opacity:1}}
     transition={{duration:2}}
     >
-    <div className='mt-10 px-5 py-5 pt-15 bg-gray-500'>
+    <div className='lg:mt-10 lg:px-5 lg:py-5 lg:pt-15 mt-[1rem] px-[1rem] py-[1rem] bg-gray-500'>
         <Typography
             variant="lead"
             id="Inter"
-            className="font-bold text-center text-white"
+            className="font-bold text-center lg:text-2xl text-sm  text-white"
         >
            Explore My 
         </Typography>
         <Typography
             variant="h1"
             id="Inter"
-            className="text-9xl mt-10 text-center"
+            className="lg:text-9xl lg:mt-10 text-center"
         >
             Programming Stack
         </Typography>
-        <div className='grid lg:grid-cols-2 justify-items-center mt-5'>
-          <div className='flex items-center'>
-              <FrontendDevelopment/>
+        <div className='grid lg:grid-cols-2 md:grid-cols-1 lg:justify-items-center lg:mt-5 mt-[1rem]'>
+          <div>
+          <FrontendDevelopment/>
+              
           </div>
           <div>
+            
             <BackendDevelopment/>
           </div>
         </div>
     </div>
 
-    <div className='mt-20 pb-20 overflow-hidden'> 
+    <div className='lg:mt-20 lg:pb-20 overflow-hidden'> 
         <Typography
             variant="h1"
             id="Inter"
-            className="text-6xl  text-center"
+            className="lg:text-6xl  text-center"
         >
             Essential Applications
         </Typography>
-        <div className='grid lg:grid-cols-6 mt-10 justify-items-center'>
+        <div className='grid lg:grid-cols-6 lg:mt-10 justify-items-center'>
           <div>
             <div className='grid grid-cols-4 mt-5 hover:scale-110 duration-300'>
                   <div className='flex items-center'>
@@ -138,35 +140,12 @@ const ProgramStack = () => {
                   </div>
             </div>
           </div>
-          <div>
-            <div className='grid grid-cols-4 mt-5 hover:scale-110 duration-300'>
-                  <div className='flex items-center'>
+                <div>
+                   <div className='grid grid-cols-4 mt-5 hover:scale-110 duration-300'>
+                     <div className='flex items-center'>
                       <li className='fa-brands fa-microsoft fa-2xl text-5xl '></li>
-                  </div>
-                  <div className='col-span-3 ml-3'>
-                      <Typography
-                          variant="h4"
-                          id="Inter"
-                          className=" "
-                      >
-                          Microsoft 
-                      </Typography>
-                      <Typography
-                          variant="lead"
-                          id="Inter"
-                          className=""
-                      >
-                          Experienced
-                      </Typography>
-                  </div>
-            </div>
-          </div>
-          <div>
-            <div className='grid grid-cols-4 mt-5 hover:scale-110 duration-300'>
-                    <div className='flex items-center'>
-                        <img src="https://blog.testproject.io/wp-content/uploads/2020/03/cypress-1024x553.png" width={100} height={50} alt="" />
-                    </div>
-                    <div className='col-span-3 ml-3'>
+                      </div>
+                        <div className='col-span-3 ml-3'>
                         <Typography
                             variant="h4"
                             id="Inter"
@@ -181,8 +160,32 @@ const ProgramStack = () => {
                         >
                             Experienced
                         </Typography>
+                        </div>
                     </div>
-              </div>
+                  </div>
+                  <div>
+                   <div className='grid grid-cols-4 mt-5 hover:scale-110 duration-300'>
+                     <div className='flex items-center'>
+                     <i class="fa-brands fa-sourcetree text-5xl "></i>                      </div>
+                        <div className='col-span-3 ml-3'>
+                        <Typography
+                            variant="h4"
+                            id="Inter"
+                            className=" "
+                        >
+                            Source Tree
+                        </Typography>
+                        <Typography
+                            variant="lead"
+                            id="Inter"
+                            className=""
+                        >
+                            Beginner
+                        </Typography>
+                        </div>
+                    </div>
+                  </div>
+              <div>
           </div>
         </div>
     </div>

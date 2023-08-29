@@ -105,7 +105,7 @@ const SpeedDialNav = () => {
   )
 
   return (
-  <div className="fixed right-6 bottom-6 group ">
+  <div className="lg:hidden fixed right-6 bottom-6 group ">
       <Collapse open={openDial}>
       {DialNavList}
       </Collapse>

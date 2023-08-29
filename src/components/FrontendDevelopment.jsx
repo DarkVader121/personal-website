@@ -5,20 +5,20 @@ import tailwind__2 from '../public/tailwind__2.png'
 const FrontendDevelopment = () => {
   return (
     <div className='hover:scale-105 duration-300'>
-        <Typography
-            variant="h1"
-            id="Inter"
-            className="flex text-6xl"
-        >
-              Front-End &nbsp; <div className='text-white'>Development </div> 
-        </Typography>
-        <div className='grid lg:grid-cols-2 justify-items-center mt-5'>
+            <Typography
+                variant="h1"
+                id="Inter"
+                className="flex lg:text-6xl text-3xl "
+            >
+                  Front-End &nbsp; <div className='text-white'>Development </div> 
+            </Typography>
+        <div className='grid lg:grid-cols-2 lg:justify-items-center lg:mt-5'>
             <div>
-            <div className='grid grid-cols-4 mt-5'>
-                <div className='flex items-center'>
+            <div className='grid grid-cols-4 lg:mt-5 '>
+                <div className='lg:flex items-center col'>
                     <li className='fa-brands fa-html5 fa-2xl text-5xl' > </li>
                 </div>
-                <div className='col-span-3 ml-3'>
+                <div className='col-span-3 lg:ml-3'>
                     <Typography
                         variant="h4"
                         id="Inter"
@@ -35,11 +35,11 @@ const FrontendDevelopment = () => {
                     </Typography>
                 </div>
             </div>
-            <div className='grid grid-cols-4 mt-5'>
+            <div className='grid grid-cols-4 lg:mt-5'>
                 <div className='flex items-center'>
                     <li className='fa-brands fa-css3-alt fa-2xl text-5xl' > </li>
                 </div>
-                <div className='col-span-3 ml-3'>
+                <div className='col-span-3 lg:ml-3'>
                     <Typography
                         variant="h4"
                         id="Inter"
@@ -56,11 +56,11 @@ const FrontendDevelopment = () => {
                     </Typography>
                 </div>
             </div>
-            <div className='grid grid-cols-4 mt-5'>
+            <div className='grid grid-cols-4 lg:mt-5'>
                 <div className='flex items-center'>
                     <li className='fa-brands fa-js fa-2xl text-5xl' > </li>
                 </div>
-                <div className='col-span-3 ml-3'>
+                <div className='col-span-3 lg:ml-3'>
                     <Typography
                         variant="h4"
                         id="Inter"
@@ -79,11 +79,11 @@ const FrontendDevelopment = () => {
             </div>
             </div>
             <div>
-                <div className='grid grid-cols-4 mt-5'>
+                <div className='grid grid-cols-4 lg:mt-5'>
                     <div className='flex items-center'>
                         <img src={tailwind__2} width={50} height={50} alt="material tailwind" />
                     </div>
-                    <div className='col-span-3 ml-3'>
+                    <div className='col-span-3 lg:ml-3'>
                         <Typography
                             variant="h4"
                             id="Inter"
@@ -100,11 +100,11 @@ const FrontendDevelopment = () => {
                         </Typography>
                     </div>
                 </div>
-                <div className='grid grid-cols-4 mt-5'>
+                <div className='grid grid-cols-4 lg:mt-5'>
                     <div className='flex items-center'>
                         <li className='fa-brands fa-bootstrap fa-2xl text-5xl' > </li>
                     </div>
-                    <div className='col-span-3 ml-3'>
+                    <div className='col-span-3 lg:ml-3'>
                         <Typography
                             variant="h4"
                             id="Inter"
@@ -121,11 +121,11 @@ const FrontendDevelopment = () => {
                         </Typography>
                     </div>
                 </div>
-                <div className='grid grid-cols-4 mt-5'>
+                <div className='grid grid-cols-4 lg:mt-5'>
                     <div className='flex items-center'>
                         <li className='fa-brands fa-react  fa-2xl text-5xl' > </li>
                     </div>
-                    <div className='col-span-3 ml-3'>
+                    <div className='col-span-3 lg:ml-3'>
                         <Typography
                             variant="h4"
                             id="Inter"

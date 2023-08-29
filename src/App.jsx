@@ -18,14 +18,12 @@ function App() {
 
   return (
     <>
+    <Navigation/>
     <div>
-
-       
           <section id="LandPage">
-          <Navigation/>
           <LandingPage />
           </section>
-          <section id="About" className='pt-10'>
+          <section id="About">
             <About/>
           </section>
           <section id="Projects">
@@ -47,7 +45,7 @@ function App() {
             <ContactMe/>
           </section>
     </div>
-    <SpeedDialNav/>
+  
       {/* { loading ? (
         <div className={loading ? 'loader-fade-out' : ""}>
        <Loader/>

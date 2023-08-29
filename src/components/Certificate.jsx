@@ -36,50 +36,54 @@ const Certificate = () => {
             selectedId={selectedId}
             setSelectedId={setSelectedId}
           />
-    <div className='px-5 pt-10'>
+    <div className='lg:px-5 lg:pt-10 px-[1rem]'>
     <Typography
         variant="lead"
         id="Inter"
-        className="font-bold text-center"
+        className="lg:text-2xl text-sm font-bold text-center"
     >
         Achievement Earned
     </Typography>
     <Typography
       variant="h1"
       id="Inter"
-      className="font-bold text-center text-9xl"
+      className="font-bold text-center lg:text-9xl"
     >
       Certificates
     </Typography>
     <a href={Certificates} download>
     <CustomButton
-      title={`Download All Certificate`}
+      title={`Download All`}
       textStyles={`Inter`}
       btnVariant={`gradient`}
       btnSize={`lg`}
-      containerStyles={`mt-5 mb-5`}
+      containerStyles={`lg:mt-3 lg:mb-3`}
     />
     </a>
-    <div className='grid lg:grid-cols-3 justify-items-center gap-5 mt-5'>
-      <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Frontend_Certificate") 
+    <div className='grid lg:grid-cols-4 grid-cols-2 justify-items-center gap-5'>
+ 
+      <div className='hover:scale-105 duration-500 mt-[1rem]  ' onClick={() => {setSelectedId("Frontend_Certificate") 
                            setOpen(true);}}>
           <img src={Frontend_Certificate} className='w-full' alt="" />
       </div>
-      <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Advance_react") 
+      <div className='hover:scale-105 duration-500 mt-[1rem]' onClick={() => {setSelectedId("Advance_react") 
                            setOpen(true);}}>
         <img src={Advance_react} className='w-full' />
       </div>
-      <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Basic") 
-                           setOpen(true);}}>
-        <img src={Basic} className='w-full' />
+      
+     
+        <div className='hover:scale-105 duration-500 mt-[1rem]' onClick={() => {setSelectedId("Basic") 
+                            setOpen(true);}}>
+          <img src={Basic} className='w-full' />
+        </div>
+        <div className='hover:scale-105 duration-500 mt-[1rem]' onClick={() => {setSelectedId("Capstone") 
+                            setOpen(true);}}>
+            <img src={Capstone} className='w-full' alt="" />
+        </div>
       </div>
-    </div>
+    
 
-    <div className='grid lg:grid-cols-3 justify-items-center gap-5 mt-5'>
-      <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Capstone") 
-                           setOpen(true);}}>
-          <img src={Capstone} className='w-full' alt="" />
-      </div>
+    <div className='grid lg:grid-cols-4 grid-cols-2 justify-items-center gap-5 mt-5'>
       <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("In_depth") 
                            setOpen(true);}}>
         <img src={In_depth} className='w-full' />
@@ -88,10 +92,7 @@ const Certificate = () => {
                            setOpen(true);}}>
         <img src={Javascript} className='w-full' />
       </div>
-    </div>
-
-    <div className='grid lg:grid-cols-3 justify-items-center gap-5 mt-5'>
-    <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Introduction") 
+      <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Introduction") 
                            setOpen(true);}}>
           <img src={Introduction} className='w-full' alt="" />
       </div>
@@ -99,14 +100,14 @@ const Certificate = () => {
                            setOpen(true);}}>
         <img src={UX_UI} className='w-full' />
       </div>
+    </div>
+
+    <div className='grid lg:grid-cols-4 grid-cols-2 justify-items-center gap-5 mt-5'>
       <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Interview") 
                            setOpen(true);}}>
         <img src={Interview} className='w-full' />
       </div>
-    </div>
-
-    <div className='grid lg:grid-cols-3 justify-items-center gap-5 mt-5'>
-    <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Version") 
+      <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Version") 
                            setOpen(true);}}>
           <img src={Version} className='w-full' alt="" />
       </div>

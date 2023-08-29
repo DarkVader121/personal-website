@@ -7,12 +7,12 @@ import adopt__2 from '../public/adopt__2.png'
 
 const Project3 = () => {
     return (
-        <div className='grid lg:grid-cols-9 mt-5'>
+        <div className='grid lg:grid-cols-9 lg:mt-5 mt-3'>
         <div className='col-span-2 inline-block'>
           <Typography
             variant="h1"
             id="Inter"
-            className="font-bold"
+            className="font-bold lg:text-6xl text-3xl"
           >
             Adopt
           </Typography>
@@ -27,7 +27,7 @@ const Project3 = () => {
 
           </div>
         </div>
-        <div className='col-span-7 px-10 pb-10'>
+        <div className='col-span-7 lg:px-10 lg:pb-10'>
         <Carousel 
           transition={{ duration: 2 }} 
           className="rounded-xl"      

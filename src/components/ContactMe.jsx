@@ -1,9 +1,10 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { Typography, Input, Textarea, Alert, Button } from '@material-tailwind/react'
 import { CustomButton, AlertMessage } from '../components'
 import Logo from '../public/Logo.png'
 import emailjs from '@emailjs/browser';
 import {motion} from 'framer-motion'
+
 
 
 
@@ -14,17 +15,18 @@ const ContactMe = () => {
     const [title, setTitle] = useState("")
     const [messageDetails, setMessageDetails] = useState("")
 
-    const checkInputs = () => {
-        if(firstName.trim() !== '' 
-           && lastName.trim() !== ''
-           && title.trim() !== ''
-           && messageDetails.trim() !== ''
-           ){
-            setDisabled(false); 
-           }else{
-            setDisabled(true);
-           }
-    }
+    useEffect(() => {
+
+            if(firstName.trim() !== '' 
+               && lastName.trim() !== ''
+               && title.trim() !== ''
+               && messageDetails.trim() !== ''
+               ){
+                setDisabled(false); 
+               }else{
+                setDisabled(true);
+               }
+    }, [firstName, lastName, title, messageDetails ])
 
     const [alert, setAlert] = useState(false)
     const form = useRef(); 
@@ -58,43 +60,43 @@ const ContactMe = () => {
         />
     }
 
-    <div className='px-5 '>        
+    <div className='lg:px-5 p-[1rem] '>        
         <Typography
             variant="lead"
             id="Inter"
-            className="font-bold text-center"
+            className="font-bold text-center lg:text-2xl text-sm"
         >
         Let’s Talk  
         </Typography>
         <Typography
             variant="h1"
             id="Inter"
-            className="text-9xl  text-center mb-[10rem]"
+            className="lg:text-9xl  text-center lg:mb-[10rem]"
         >
         Contact Me
         </Typography>
 
-        <div className='grid lg:grid-cols-8 mt-10 mb-[10rem]'>
-            <div className='col-span-3 mt-10'>
+        <div className='grid lg:grid-cols-8 lg:mt-10 lg-[10rem] mt-[1rem] '>
+            <div className='col-span-3 lg:mt-10'>
                 <Typography
-                    variant="h1"
+                    variant="h5"
                     id="Inter"
-                    className="text-6xl "
+                    className="lg:text-6xl text-3xl "
                 >
                 Erron John
                 </Typography>
                 <Typography 
                     variant="lead"
                     id="Inter"
-                    className="text-2xl"
+                    className="lg:text-2xl text-sm"
                 >
-                I'm open to project collaborations, developing customized projects, and actively seeking job opportunities. If you're interested, feel free to reach out to me
+                I'm open to project collaborations, developing customized projects, and actively seeking job opportunities. If you're interested, feel free to <br /> reach out to me
                 </Typography>
-                <div className='mt-20'>
+                <div className='lg:mt-20 mt-[1rem]'>
                     <Typography
                         variant="lead"
                         id="Inter"
-
+                        className="lg:text-2xl text-sm"
                     >
                         Email Fails? <br /> 
                         <b> You can reach out to me here. </b> <br />
@@ -104,7 +106,7 @@ const ContactMe = () => {
                         <Typography 
                             variant="lead"
                             id="Inter"
-                            className="ml-3"
+                            className="ml-3 lg:text-2xl text-sm" 
                         >
                             lapacerronjohn@gmail.com
                         </Typography>
@@ -112,34 +114,33 @@ const ContactMe = () => {
                     
                 </div>  
             </div>
-            <div className='col-span-5'>
-
+            <div className='col-span-5 mt-[1rem]'>
                     <Typography
                         variant="h1"
                         id="Inter"
-                        className="text-6xl"
+                        className="lg:text-6xl text-3xl "
                     >
                     Send me a Message
                     </Typography>
                     <form ref={form} onSubmit={sendEmail} id="contact_form" >
-                    <div className='grid lg:grid-cols-2'>
-                        <div className='w-full mt-10 px-5'>
-                             <Input size="lg" label="First Name" type='text' name="firstName" value={firstName} onChange={(e) => {setFirstName(e.target.value),  checkInputs(); }}/>
+                    <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-0 gap-3'>
+                        <div className='col-span-2 lg:mt-10   lg:px-5'>
+                             <Input size="lg" label="First Name" type='text' name="firstName" value={firstName} onChange={(e) => {setFirstName(e.target.value) }}/>
                          </div>
-                         <div className='w-full px-5 mt-10'>
-                             <Input size="lg" label="Last Name" type='text' name="lastName" value={lastName} onChange={(e) => {setLastName(e.target.value); checkInputs(); }}/>
+                         <div className='col-span-2 lg:px-5 lg:mt-10'>
+                             <Input size="lg" label="Last Name" type='text' name="lastName" value={lastName} onChange={(e) => {setLastName(e.target.value) }}/>
                         </div>
-                        <div className='col-span-2 mt-10'>
-                            <div className='w-full px-5'>
-                                <Input size='lg' label="Email Address" type='text' name="title" value={title} onChange={(e) => {setTitle(e.target.value); checkInputs(); }}/> 
+                        <div className='col-span-2 lg:mt-10'>
+                            <div className='w-full lg:px-5 '>
+                                <Input size='lg' label="Email Address" type='text' name="title" value={title} onChange={(e) => {setTitle(e.target.value)}}/> 
                             </div> 
                         </div>
-                        <div className='col-span-2 mt-10'>
-                            <div className='w-full px-5'>
-                                <Input label="Message" name="message" value={messageDetails} onChange={(e) => {setMessageDetails(e.target.value); checkInputs(); }}/>
+                        <div className='col-span-2 lg:mt-10'>
+                            <div className='w-full lg:px-5'>
+                                <Input label="Message" name="message" value={messageDetails} onChange={(e) => {setMessageDetails(e.target.value) }}/>
                             </div>
                         </div>
-                        <div className='col-span-2 px-5 mt-10'>
+                        <div className='col-span-2 lg:px-5 lg:mt-10'>
                             <CustomButton title={`Send`} btnType={`submit`} btnValue={`Send`} isDisabled={disabled} />                                
                         </div>
                     </div>

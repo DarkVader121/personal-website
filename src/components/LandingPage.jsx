@@ -27,7 +27,6 @@ const LandingPage = () => {
   
   return (
     <>
-    
     <motion.div 
         initial={{
             opacity: 0
@@ -38,7 +37,7 @@ const LandingPage = () => {
         transition={{
             duration:3
         }}
-        className='px-10 lg:py-20  '>
+        className='lg:px-10 lg:py-20 px-[1rem] py-10 '>
         <Typography
             variant="h1"
             id="Inter"
@@ -65,14 +64,13 @@ const LandingPage = () => {
             transition={{
                 duration:3
             }}
-    className='bg-gray-500 '>
-        <div className='pl-20 pt-5'>
+    className='bg-gray-500'>
+        <div className='lg:pl-20 lg:pt-5'>
             <div className='grid lg:grid-cols-2 md:grid-cols-1 items-center justify-center'>
-                <div className=' pl-20 pt-10'>
+                <div className='lg:pl-40 lg:pt-20 pl-[1rem] pr-[1rem] pt-5'>
                         <Typography
-                        variant="lead"
                         id="Inter"
-                        className=" text-white"
+                        className=" text-white lg:text-2xl"
                         >
                         I wanted to extend my warm regards to you.
                         </Typography>
@@ -83,33 +81,34 @@ const LandingPage = () => {
                      >
                         Erron John
                      </Typography>
-                     <div className='flex items-center gap-5 mt-5'>
-                                            <motion.button
+                     <div className='flex items-center lg:gap-5 gap-1 mt-5'>
+                                <motion.button
                                 whileHover={{ scale:1.1}}
                                 whileTap={{ scale: 0.9}}
                                 >
-                                <Link className='bg-black text-white p-4 rounded-lg font-bold hover:bg-gray-900 hover:text-gray duration-300' id="Inter" to="Contact" spy={true} smooth={true} duration={5000}>
-                                <li className='fa-regular fa-handshake fa-lg  mr-3'></li>
+                                <Link className='bg-black text-white lg:p-3 p-2 rounded-lg lg:font-bold hover:bg-gray-900 hover:text-gray duration-300' id="Inter" to="Contact" spy={true} smooth={true} duration={5000}>
+                                <li className='fa-regular fa-handshake lg:fa-lg mr-3'></li>
+                                    
                                     Lets Talk
                                 </Link> 
                                
                                 </motion.button>
-                            <a href={Resume} download>
-                            <CustomButton btnSize={`lg`} title={`Download Resume`} btnVariant={`outlined`} containerStyles={`hover:text-white hover:bg-black duration-300`}/>
+                            <a href={Resume} download >
+                            <CustomButton btnSize={`md`} title={`Download Resume`} btnVariant={`outlined`} containerStyles={`hover:text-white hover:bg-black duration-300`}/>
                             </a>
                       </div>
                 </div>
                 <div className='text-left'>
                     <Typography
                         variant="h1"
-                        className="text-black lg:text-6xl text-left pt-20"
+                        className="overflow-hidden text-black lg:text-6xl text-4xl text-left lg:pt-20 pt-[1rem] pl-[1rem]"
                     >
                        <span ref={el}/>
                     </Typography>
                 </div>
             </div>
          </div>
-         <div className='px-10 py-10'>
+         <div className='lg:px-10 lg:py-10 pl-[1rem] pt-[2rem]'>
             <Typography
                 variant="lead"
                 id="Inter"
@@ -117,7 +116,7 @@ const LandingPage = () => {
             >
                Tech Stack
             </Typography>
-                <div className='mt-10 marquee'>  
+                <div className='lg:mt-10 mt-5 marquee'>  
                     <div className='marquee__group'>
                         <span>
                         <div className='flex items-center justify-center'>

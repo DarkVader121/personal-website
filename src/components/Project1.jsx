@@ -9,15 +9,15 @@ import church__2 from '../public/church__2.png'
 const Project1 = () => {
     return (
         <div className='grid lg:grid-cols-9'>
-        <div className='col-span-2 inline-block'>
+        <div className='col-span-2 inline-block lg:mt-0 mt-3'>
           <Typography
             variant="h1"
             id="Inter"
-            className="font-bold"
+            className="font-bold lg:text-6xl text-3xl "
           >
              Church Monitoring System
           </Typography>
-          <div className='mt-5 flex gap-2'>
+          <div className='lg:mt-5 mt-3 flex gap-2'>
                 <ChurchDrawer/>
                 <div className='border-solid flex items-center rounded-full  border-black'>
                   <li className='fa-brands fa-github fa-2xl mr-1 '></li>
@@ -28,7 +28,7 @@ const Project1 = () => {
 
           </div>
         </div>
-        <div className='col-span-7 px-10 pb-10'>
+        <div className='col-span-7 lg:px-10 lg:pb-10'>
         <Carousel 
           transition={{ duration: 2 }} 
           className="rounded-xl"      

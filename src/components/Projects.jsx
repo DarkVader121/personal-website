@@ -1,7 +1,8 @@
-import { Typography, Carousel } from '@material-tailwind/react'
+import { Typography } from '@material-tailwind/react'
 import React from 'react'
 import { Project1, Project2, Project3 } from '../components'
 import { motion } from 'framer-motion'
+import { useState, useEffect } from 'react'
 
 const Projects = () => {
   return (
@@ -9,18 +10,18 @@ const Projects = () => {
     initial={{opacity:0}}
     whileInView={{opacity:1}}
     transition={{duration:2}}
-    className='px-5 pt-5'>
+    className='lg:px-5 lg:pt-5 px-[1rem] pt-[1rem]'>
         <Typography
             variant="lead"
             id="Inter"
-            className="font-bold text-center"
+            className="font-bold text-center lg:text-2xl text-md"
         >
            Browse My Recent 
         </Typography>
         <Typography
           variant="h1"
           id="Inter"
-          className="font-bold text-center text-9xl"
+          className="font-bold text-center lg:text-9xl text-5xl"
         >
           Projects
         </Typography>

@@ -11,48 +11,102 @@ const About = () => {
         whileInView={{opacity:1}}
         transition={{duration:2}}
     >
-    <div className='mb-10 lg:px-5 overflow-hidden'>
+    <div className='lg:mb-10 lg:px-5 px-[1rem] pt-[1rem] overflow-hidden'>
         <Typography
             variant="lead"
             id="Inter"
-            className="font-bold text-center"
+            className="lg:text-2xl text-sm font-bold text-center"
         >
            Get To Know More
         </Typography>
         <Typography
             variant="h1"
             id="Inter"
-            className="text-9xl mt-10 text-center"
+            className="lg:text-9xl text-5xl lg:mt-10 text-center"
         >
             About Me
         </Typography>
         <Typography
             variant="h1"
             id="Inter"
-            className="text-7xl mt-10"
+            className="lg:text-7xl lg:mt-10 text-4xl mt-5"
         >
             Erron John
         </Typography>
         <Typography
             variant="lead"
             id="Inter"
-            className="font-bold text-gray-500"
+            className="lg:text-2xl text-md font-bold text-gray-500"
         >
             Front-end Developer
         </Typography>
         <Typography
             variant="lead"
             id="Inter"
-            className="mt-5 "
+            className="lg:mt-5 mt-[1rem] lg:text-2xl text-sm"
         >
         I have a strong background in BS Information Technology with a specialization in React and Laravel, backed by over 480 hours of hands-on experience during my On-The-Job Training (OJT). My expertise spans both frontend and backend development, and I've honed my skills through education, including the attainment of a Meta Front-End Developer Professional Certificate. Additionally, I have expanded my proficiency in mobile app development through online courses in React Native. My commitment to staying up-to-date with the latest technologies and frameworks ensures that I can deliver top-notch solutions in the dynamic field of Information Technology.
         </Typography>
 
-        <div className='grid lg:grid-cols-2 mt-20 mb-20'>
+        <div className='lg:hidden mt-5'>
+            <div className='grid grid-cols-8'>
+                <div className='mr-3 col-span-1 flex mt-1 justify-end items-start'>
+                 <i class="fa-solid fa-desktop text-2xl"></i>
+                </div>
+
+                <div className='col-span-7  text-2xl '>
+                    <Typography
+                        variant='h3'
+                        id='Inter'
+                    >
+                        Experience 
+                    </Typography>
+                    <Typography
+                        variant='h5'
+                        id='Inter'
+                    >
+                        <b>480+ </b> OJT Hours 
+                    </Typography>
+                    <Typography
+                        variant='small'
+                        id='Inter'
+                    >
+                        Front-end & Back-end Development
+                    </Typography>
+                </div>
+            </div>
+            <div className='grid grid-cols-8 mt-5'>
+                <div className='mr-3 col-span-1 flex mt-1 justify-end items-start'>
+                 <i class="fa-solid fa-graduation-cap text-2xl"></i>
+                </div>
+                <div className='col-span-7  text-2xl '>
+                    <Typography
+                        variant='h3'
+                        id='Inter'
+                    >
+                        Education
+                    </Typography>
+                    <Typography
+                        variant='h5'
+                        id='Inter'
+                    >
+                        BS Information Technology
+                    </Typography>
+                    <Typography
+                        variant='small'
+                        id='Inter'
+                    >
+                        Meta Front-End Developer Professional Certificate and React Native (Online)
+                    </Typography>
+                </div>
+            </div>
+        </div>
+
+        <div className='hidden lg:flex lg:justify-between lg:grid-cols-2 lg:mt-20 lg:mb-20 mt-5 mb-5'>
             <motion.div 
             whileHover={{ scale:1.1}}
             whileTap={{ scale: 0.9}}
-            className='grid lg:grid-cols-3 mt-2'>
+            className='grid lg:grid-cols-3 lg:mt-2'>
                 <div className='flex justify-end mt-10'>
                     <li className='fa-solid fa-desktop fa-2xl' style={{fontSize:'4rem'}}></li>
                 </div>
@@ -113,8 +167,8 @@ const About = () => {
             </motion.div>
         </div>
     </div>
-    <div className='bg-gray-500 lg:px-5 lg:py-2'>
-        <div className='grid lg:grid-cols-9 mt-5'>
+    <div className='hidden lg:flex bg-gray-500 lg:px-5 lg:py-2'>
+        <div className='grid lg:grid-cols-9 '>
             <div className='flex items-center'>
                 <li className='fa-solid fa-border-all fa-2xl' style={{fontSize:"4rem"}}></li>
                 <div className='inline-block'>
@@ -153,6 +207,46 @@ const About = () => {
             </div>
         </div>
 
+    </div>
+    <div className="lg:hidden bg-gray-500 px-[1rem] mt-5">
+            <div className='grid grid-cols-8'>
+                <div className='mr-3 col-span-1 flex mt-1 justify-end items-start'>
+                   <i class="fa-solid fa-border-all text-2xl"></i>
+                </div>
+
+                <div className='col-span-7  text-2xl '>
+                    <Typography
+                        variant='h3'
+                        id='Inter'
+                    >
+                        Experience 
+                    </Typography>
+                    <Typography
+                        variant='small'
+                        id='Inter'
+                    >
+                        2000 - 2023
+                    </Typography>
+                    <div className='marquee'>
+                        <div className='marquee__group'>
+                            <Typography
+                                variant='small'
+                                id='Inter'
+                            >
+                                Singing, Dancing, Movie Nights, Camping, Fishing, Mobile and PC Games, Gardening
+                            </Typography>
+                        </div>
+                        <div aria-hidden="true" className='marquee__group'>
+                            <Typography
+                                variant='small'
+                                id='Inter'
+                            >
+                                Singing, Dancing, Movie Nights, Camping, Fishing, Mobile and PC Games, Gardening,
+                            </Typography>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
     </motion.div>
   )

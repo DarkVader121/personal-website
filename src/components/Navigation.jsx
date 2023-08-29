@@ -25,10 +25,10 @@ const Navigation = () => {
       <Typography
         variant="paragraph"
         id="Inter"
-        className="px-10 py-2 drop-shadow-md text-lg  hover:scale-150 duration-300 hover:bg-black hover:text-white hover:font-bold  "
+        className="px-10 py-2 drop-shadow-md text-lg  hover:scale-105 duration-300 hover:bg-black hover:text-white hover:font-bold  "
       >
         <button>
-         <Link to="About" spy={true} smooth={true}  duration={3000}>
+         <Link onClick={() => {setOpenNav(!openNav)}} to="About" spy={true} smooth={true}  duration={3000}>
           About
          </Link> 
          </button>
@@ -36,10 +36,10 @@ const Navigation = () => {
       <Typography
         variant="paragraph"
         id="Inter"
-        className="px-10 py-2 drop-shadow-md text-lg  hover:scale-150 duration-300 hover:bg-black hover:text-white hover:font-bold  "
+        className="px-10 py-2 drop-shadow-md text-lg  hover:scale-105 duration-300 hover:bg-black hover:text-white hover:font-bold  "
       >
         <button>
-        <Link to="Projects" spy={true} smooth={true} duration={3000}>
+        <Link onClick={() => {setOpenNav(!openNav)}} to="Projects" spy={true} smooth={true} duration={3000}>
           Projects
         </Link>
         </button>
@@ -47,10 +47,10 @@ const Navigation = () => {
       <Typography
         variant="paragraph"
         id="Inter"
-        className="px-10 py-2 drop-shadow-md text-lg  hover:scale-150 duration-300 hover:bg-black hover:text-white hover:font-bold  "
+        className="px-10 py-2 drop-shadow-md text-lg  hover:scale-105 duration-300 hover:bg-black hover:text-white hover:font-bold  "
       >
         <button>
-        <Link to="Certificate" spy={true} smooth={true} duration={3000}>
+        <Link onClick={() => {setOpenNav(!openNav)}} to="Certificate" spy={true} smooth={true} duration={3000}>
           Certificates
         </Link>
         </button>
@@ -59,10 +59,10 @@ const Navigation = () => {
         
         variant="paragraph"
         id="Inter"
-        className="px-10 py-2 drop-shadow-md text-lg hover:scale-150 duration-300 hover:bg-black hover:text-white hover:font-bold  "
+        className="px-10 py-2 drop-shadow-md text-lg hover:scale-105 duration-300 hover:bg-black hover:text-white hover:font-bold  "
       >
         <button>
-        <Link to="Program" spy={true} smooth={true} duration={3000}>
+        <Link onClick={() => {setOpenNav(!openNav)}} to="Program" spy={true} smooth={true} duration={3000}>
           Program Stack
         </Link>
        </button>
@@ -71,10 +71,10 @@ const Navigation = () => {
       <Typography
         variant="paragraph"
         id="Inter"
-        className="px-10 py-2 drop-shadow-md text-lg hover:scale-150 duration-300 hover:bg-black hover:text-white hover:font-bold  "
+        className="px-10 py-2 drop-shadow-md text-lg hover:scale-105 duration-300 hover:bg-black hover:text-white hover:font-bold  "
       >
          <button>
-        <Link to="Experience" spy={true} smooth={true} duration={3000}>
+        <Link onClick={() => {setOpenNav(!openNav)}} to="Experience" spy={true} smooth={true} duration={3000}>
           Experience
         </Link>
         </button>
@@ -83,10 +83,10 @@ const Navigation = () => {
         
         variant="paragraph"
         id="Inter"
-        className="px-10 py-2 drop-shadow-md text-lg hover:scale-150 duration-300 hover:bg-black hover:text-white hover:font-bold  "
+        className="px-10 py-2 drop-shadow-md text-lg hover:scale-105 duration-300 hover:bg-black hover:text-white hover:font-bold  "
       >
          <button>
-        <Link to="Videos"  smooth={true} duration={4000}>
+        <Link onClick={() => {setOpenNav(!openNav)}} to="Videos"  smooth={true} duration={4000}>
           Videos
         </Link>
         </button>
@@ -95,8 +95,8 @@ const Navigation = () => {
     </motion.nav>
   )
   return (
-    <div className=' max-w-screen lg:px-5 lg:py-2 bg-blue-gray-1'>
-      <div className='mx-auto flex items-center justify-between '>
+    <div className='max-w-screen lg:px-5 lg:py-2 bg-blue-gray-1'>
+      <div className='md:pl-[2rem] flex items-center justify-between '>
         <motion.button
           whileHover={{ scale:1.1}}
           whileTap={{ scale: 0.9}}
@@ -148,6 +148,7 @@ const Navigation = () => {
           </div>
         </Collapse>
     </div>
+   
   )
 }
 

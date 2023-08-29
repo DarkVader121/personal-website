@@ -10,18 +10,18 @@ const Videos = () => {
     initial={{opacity:0}}
     whileInView={{opacity:1}}
     transition={{duration:2}}
-    className='lg:p-5'>
+    className='lg:p-5 p-[1rem]'>
         <Typography
             variant="lead"
             id="Inter"
-            className="font-bold text-center"
+            className="lg:text-2xl text-sm font-bold text-center"
         >
            Watch My 
         </Typography>
         <Typography
             variant="h1"
             id="Inter"
-            className="text-9xl mt-10 text-center"
+            className="lg:text-9xl lg:mt-10 text-center"
         >
             Videos
         </Typography>

@@ -22,6 +22,7 @@ import ContactMe from "./ContactMe";
 import AlertMessage from "./AlertMessage";
 import Practice from "./Practice";
 import SpeedDialNav from "./SpeedDialNav";
+import MobileExperience from "./MobileExperience";
 export {
     Navigation,
     Loader, 
@@ -47,4 +48,5 @@ export {
     AlertMessage,
     Practice,
     SpeedDialNav,
+    MobileExperience,
 }
