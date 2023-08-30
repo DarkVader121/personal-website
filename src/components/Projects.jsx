@@ -10,13 +10,13 @@ const Projects = () => {
     initial={{opacity:0}}
     whileInView={{opacity:1}}
     transition={{duration:2}}
-    className='lg:px-5 lg:pt-5 px-[1rem] pt-[1rem]'>
+    className='lg:px-[4rem] lg:pt-[3rem] px-[1rem] pt-[1rem]'>
         <Typography
             variant="lead"
             id="Inter"
             className="font-bold text-center lg:text-2xl text-md"
         >
-           Browse My Recent 
+           Browse my recent 
         </Typography>
         <Typography
           variant="h1"

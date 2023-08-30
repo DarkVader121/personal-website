@@ -1,6 +1,6 @@
 import React from 'react'
 import {ChurchDrawer} from '../components'
-import { Typography, Button, Carousel, IconButton } from '@material-tailwind/react'
+import { Typography, Carousel} from '@material-tailwind/react'
 import church__banner from '../public/church__banner.png'
 import church__1 from '../public/church__1.png'
 import church__2 from '../public/church__2.png'
@@ -8,8 +8,8 @@ import church__2 from '../public/church__2.png'
 
 const Project1 = () => {
     return (
-        <div className='grid lg:grid-cols-9'>
-        <div className='col-span-2 inline-block lg:mt-0 mt-3'>
+        <div className='grid lg:grid-cols-9 lg:mt-[2rem]'>
+        <div className='col-span-2 inline-block lg:mt-[2rem] mt-3'>
           <Typography
             variant="h1"
             id="Inter"

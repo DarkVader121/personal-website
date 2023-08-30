@@ -1,6 +1,5 @@
 import React from 'react'
 import {Dialog} from '@material-tailwind/react'
-import {CustomButton} from "../components"
 import Frontend_Certificate from '../public/Coursera Certificate/Frontend_Certificate.png';
 import Advance_react from '../public/Coursera Certificate/Advance_react.png';
 import Basic from '../public/Coursera Certificate/Basic.png';

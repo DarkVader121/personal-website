@@ -4,7 +4,7 @@ import CountUp from 'react-countup'
 const Loader = () => {
   return (
     <>
-    <div className='body'>
+    <div className='body '>
         <span>
             <span></span>
             <span></span>
@@ -13,7 +13,6 @@ const Loader = () => {
         </span>
         <div className='base'>
             <span>
-
             </span>
             <div className='face'></div>
         </div>
@@ -28,7 +27,7 @@ const Loader = () => {
       <CountUp
         start={0}
         end={100}
-        duration={4}
+        duration={6}
       /> %
     </div>
     </>

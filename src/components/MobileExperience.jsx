@@ -37,25 +37,37 @@ const MobileExperience = () => {
         <Accordion open={alwaysOpen} >
           <AccordionHeader onClick={handleAlwaysOpen}> <span className='text-white' id="Inter"> GlobalOr / 2023 / Intern </span> </AccordionHeader>
           <AccordionBody>
-            <span className='text-white'>
-           During the enriching experience of my internship in May 2022, I had the privilege to work with GLOBALOR PHILIPPINES, located in the scenic locale of Bohol, Philippines. In this role, I embraced a dual responsibility as both a Frontend Developer and a Quality Assurance Tester, harnessing my skills and expertise in ReactJS and Laravel to contribute to the team's success and growth.
-           </span>
+          <Typography variant="lead" id="Inter" className="lg:mt-0 lg:ml-[5rem] pl-[1rem] text-sm  text-white ">
+                •  UX Planning and Designing, Prototyping, UI Design and Validation, UI / UX Evaluation, Gather User Feedback,  Message Content <br />
+                • Created user-centered designs by understanding business requirements, and user feedback. <br />
+                • Generated user flows, wireframes, prototypes and mockups and translated requirements into style 
+                guides, design systems, design patterns and attractive user interfaces.<br />
+                • Applied the knowledge of programming languages to code user-side applications, including visual 
+                elements like menu bars, clickable buttons and the overall layout of websites or web applications.<br />
+                • Design Implementation, UI Design and Evaluation, API Integration, Technical Recommendation, Code Documentation, Code Organization<br />
+                • Handled the development and maintenance ofserver-side components and gained practical and  theoretical experience that can be applied to real-life scenarios. <br />
+                • Contributed to tasks such as coding, troubleshooting, and collaborating with the front-end team.<br />
+                • Developed Back-End Functionalities, Developed API, Managed Database and Server, Code and API Documentation<br />
+                • Spearheaded the product quality, testing each part to ensure it meets company standards before moving to the next phase.<br />
+                • Developed tools that will improve the testing process and provided improvement feedback to the Project Manager.<br />
+                • Test Applications(Web & Mobile Application), Manual testing, Automation scripting, Issue tracking and bug reporting, Technical recommendation, Code organization, Code documentation
+                </Typography>
           </AccordionBody>
         </Accordion>
         <Accordion open={open === 1}>
           <AccordionHeader onClick={() => handleOpen(1)}> <span className='text-white' id="Inter"> Upwork Inc. / 2020 Freelancer </span></AccordionHeader>
           <AccordionBody>
-           <span className='text-white' id="Inter">
-           In June 2020, I worked as a Virtual Assistant Freelancer for UPWORK GLOBAL INC., where I conducted research, gathered data, and managed lead databases to support targeted customer segment identification and lead generation efforts.
-           </span>
+             <Typography variant="lead" id="Inter" className="ml-[1rem] text-sm text-white">
+              • In June 2020, I worked as a Virtual Assistant  Freelancer for UPWORK GLOBAL INC., where I  conducted research, gathered data, and   managed lead databases to support  targeted customer segment identification  and lead generation efforts.
+              </Typography>
           </AccordionBody>
         </Accordion>
         <Accordion open={open === 2}>
           <AccordionHeader onClick={() => handleOpen(2)}> <span className='text-white' id="Inter"> JJS’s Data System / 2016 Freelancer </span></AccordionHeader>
           <AccordionBody>
-            <span className='text-white' id="Inter">
-              In the summer of 2016, I served as a Lead Generation Assistant at JJS DATA MINING in Bohol, Philippines, excelling in virtual assistant services with a focus on lead generation and social media, adeptly researching and identifying potential leads and meticulously maintaining lead databases and interactions.
-            </span>
+            <Typography variant="lead" id="Inter" className=" ml-[1rem] text-sm text-white">
+               • In the summer of 2016, I served as a Lead  Generation Assistant at JJS DATA MINING in Bohol, Philippines, excelling in virtual assistant services with a focus on lead generation and social media, adeptly researching and identifying potential leads and meticulously maintaining lead databases and interactions.           
+            </Typography>
           </AccordionBody>
         </Accordion>
     </motion.div>

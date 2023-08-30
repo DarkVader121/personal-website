@@ -1,6 +1,6 @@
 import React from 'react'
 import { Typography,Carousel } from '@material-tailwind/react'
-import { CustomButton, AdoptDrawer } from '../components'
+import { AdoptDrawer } from '../components'
 import adopt__banner from '../public/adopt__banner.png'
 import adopt__1 from '../public/adopt__1.png'
 import adopt__2 from '../public/adopt__2.png'
@@ -12,7 +12,7 @@ const Project3 = () => {
           <Typography
             variant="h1"
             id="Inter"
-            className="font-bold lg:text-6xl text-3xl"
+            className="font-bold lg:text-6xl text-3xl lg:mt-[2rem]"
           >
             Adopt
           </Typography>

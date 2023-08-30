@@ -11,41 +11,41 @@ const About = () => {
         whileInView={{opacity:1}}
         transition={{duration:2}}
     >
-    <div className='lg:mb-10 lg:px-5 px-[1rem] pt-[1rem] overflow-hidden'>
+    <div className='lg:mb-0 lg:px-[4rem] lg:pt-[3rem] px-[1rem] pt-[1rem] overflow-hidden'>
         <Typography
             variant="lead"
             id="Inter"
             className="lg:text-2xl text-sm font-bold text-center"
         >
-           Get To Know More
+           Get to know more
         </Typography>
         <Typography
             variant="h1"
             id="Inter"
-            className="lg:text-9xl text-5xl lg:mt-10 text-center"
+            className="lg:text-9xl text-5xl lg:mt-0 text-center"
         >
-            About Me
+            About me
         </Typography>
         <Typography
             variant="h1"
             id="Inter"
-            className="lg:text-7xl lg:mt-10 text-4xl mt-5"
+            className="lg:text-7xl lg:mt-[1rem] text-4xl mt-5"
         >
-            Erron John
+            Erron John Lapac
         </Typography>
         <Typography
             variant="lead"
             id="Inter"
-            className="lg:text-2xl text-md font-bold text-gray-500"
+            className="lg:text-3xl text-md font-bold text-gray-500"
         >
             Front-end Developer
         </Typography>
         <Typography
             variant="lead"
             id="Inter"
-            className="lg:mt-5 mt-[1rem] lg:text-2xl text-sm"
+            className="lg:mt-5 mt-[1rem] lg:text-3xl text-sm"
         >
-        I have a strong background in BS Information Technology with a specialization in React and Laravel, backed by over 480 hours of hands-on experience during my On-The-Job Training (OJT). My expertise spans both frontend and backend development, and I've honed my skills through education, including the attainment of a Meta Front-End Developer Professional Certificate. Additionally, I have expanded my proficiency in mobile app development through online courses in React Native. My commitment to staying up-to-date with the latest technologies and frameworks ensures that I can deliver top-notch solutions in the dynamic field of Information Technology.
+        I have a strong background in BS Information Technology with a specialization in React and Laravel, backed by a solid hands-on experience during my On-The-Job Training (OJT). My expertise spans both frontend and backend development, and I've honed my skills through education, including the attainment of a Meta Front-End Developer Professional Certificate. Additionally, I have expanded my proficiency in mobile app development through online courses in React Native. My commitment to staying up-to-date with the latest technologies and frameworks ensures that I can deliver top-notch solutions in the dynamic field of Information Technology.
         </Typography>
 
         <div className='lg:hidden mt-5'>
@@ -102,11 +102,11 @@ const About = () => {
             </div>
         </div>
 
-        <div className='hidden lg:flex lg:justify-between lg:grid-cols-2 lg:mt-20 lg:mb-20 mt-5 mb-5'>
+        <div className='hidden lg:flex lg:justify-center lg:grid-cols-2 lg:mt-20 lg:mb-20 mt-5 mb-5'>
             <motion.div 
             whileHover={{ scale:1.1}}
             whileTap={{ scale: 0.9}}
-            className='grid lg:grid-cols-3 lg:mt-2'>
+            className='grid lg:grid-cols-3 lg:mx-20 lg:mt-2'>
                 <div className='flex justify-end mt-10'>
                     <li className='fa-solid fa-desktop fa-2xl' style={{fontSize:'4rem'}}></li>
                 </div>
@@ -137,7 +137,7 @@ const About = () => {
             <motion.div 
             whileHover={{ scale:1.1}}
             whileTap={{ scale: 0.9}}
-            className='grid grid-cols-3'>
+            className='grid grid-cols-3 lg:mx-auto'>
                 <div className='flex justify-end mt-10'>
                     <li className='fa-solid fa-graduation-cap fa-2xl' style={{fontSize:'4rem'}}></li>
                 </div>
@@ -154,20 +154,20 @@ const About = () => {
                         id="Inter"
                         className="ml-3 text-3xl"
                     >
-                       <b>4 yrs</b> BS Information Technology
+                        BS Information Technology
                     </Typography>
                     <Typography
                         variant="lead"
                         id="Inter"
-                        className="ml-3"
+                        className="ml-3 "
                     >
-                       <b> 30 days </b> Meta Front-End Developer Professional Certificate <br /> <div className='ml-20'>   and React Native (Online)</div>
+                    Meta Front-End Developer Professional Certificate <br /> React Native Certificate
                     </Typography>
                 </div>
             </motion.div>
         </div>
     </div>
-    <div className='hidden lg:flex bg-gray-500 lg:px-5 lg:py-2'>
+    <div className='hidden lg:flex bg-gray-500 lg:px-5 '>
         <div className='grid lg:grid-cols-9 '>
             <div className='flex items-center'>
                 <li className='fa-solid fa-border-all fa-2xl' style={{fontSize:"4rem"}}></li>

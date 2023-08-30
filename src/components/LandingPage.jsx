@@ -1,22 +1,21 @@
 import { Typography } from '@material-tailwind/react'
-import React, { useState, useEffect,useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import tailwind__2 from '../public/tailwind__2.png'
 import material__ui from '../public/material__ui.png'
 import { Link } from 'react-scroll'
 import {CustomButton} from '../components'
-import Resume from '../public/Resume.pdf'
+import Resume from '../public/Coursera Certificate/Lapac_Resume.pdf'
 import { motion } from 'framer-motion'
 import Typed from 'typed.js';
-import { SpeedDialNav } from '../components'
 
 const LandingPage = () => {
   const el = useRef(null); 
   
   useEffect(() => {
     const typed = new Typed(el.current, {
-        strings: ['Front-end Developer', 'Programmer', 'Software engineer', 'Code writer', 'Coding', 'Still Coding', 'Still Coding', 'Again, Still Coding'],
-        typeSpeed: 150,
-        backSpeed:150, 
+        strings: ['Front-end Developer', 'Programmer', 'Software Developer', 'Code writer', 'Coding...', 'still coding...', 'still coding...', 'Again, still coding../'],
+        typeSpeed: 200,
+        backSpeed: 200, 
         loop: true,
       });
   
@@ -37,21 +36,23 @@ const LandingPage = () => {
         transition={{
             duration:3
         }}
-        className='lg:px-10 lg:py-20 px-[1rem] py-10 '>
+        className='lg:px-[3rem] lg:py-20 px-[1rem] py-10 '>
         <Typography
             variant="h1"
             id="Inter"
             className="lg:font-extrabold lg:text-9xl md:5xl"
         >
-            Coding is not about typing <br/> it's about thinking.
+            Coding is not just about <br/> typing, it's about thinking.
         </Typography>
+        
         <Typography
             variant="lead"
             id="Inter"
-            className="mt-5"
+            className=""
         >
             - Anonymous
         </Typography>
+        
     </motion.div>
 
     <motion.footer
@@ -65,9 +66,9 @@ const LandingPage = () => {
                 duration:3
             }}
     className='bg-gray-500'>
-        <div className='lg:pl-20 lg:pt-5'>
+        <div className='lg:pl-[3rem] lg:pt-5'>
             <div className='grid lg:grid-cols-2 md:grid-cols-1 items-center justify-center'>
-                <div className='lg:pl-40 lg:pt-20 pl-[1rem] pr-[1rem] pt-5'>
+                <div className=' lg:pt-10 pl-[1rem] pr-[1rem] pt-5'>
                         <Typography
                         id="Inter"
                         className=" text-white lg:text-2xl"
@@ -79,7 +80,7 @@ const LandingPage = () => {
                         id="Inter"
                         className="text-white lg:text-8xl "
                      >
-                        Erron John
+                        Welcome to my Portfolio!
                      </Typography>
                      <div className='flex items-center lg:gap-5 gap-1 mt-5'>
                                 <motion.button
@@ -87,8 +88,7 @@ const LandingPage = () => {
                                 whileTap={{ scale: 0.9}}
                                 >
                                 <Link className='bg-black text-white lg:p-3 p-2 rounded-lg lg:font-bold hover:bg-gray-900 hover:text-gray duration-300' id="Inter" to="Contact" spy={true} smooth={true} duration={5000}>
-                                <li className='fa-regular fa-handshake lg:fa-lg mr-3'></li>
-                                    
+                                <li className='fa-regular fa-handshake lg:fa-sm mr-3'></li>
                                     Lets Talk
                                 </Link> 
                                
@@ -108,7 +108,7 @@ const LandingPage = () => {
                 </div>
             </div>
          </div>
-         <div className='lg:px-10 lg:py-10 pl-[1rem] pt-[2rem]'>
+         <div className='lg:px-[4rem] lg:py-10 pl-[1rem] pt-[2rem]'>
             <Typography
                 variant="lead"
                 id="Inter"
@@ -116,7 +116,7 @@ const LandingPage = () => {
             >
                Tech Stack
             </Typography>
-                <div className='lg:mt-10 mt-5 marquee'>  
+                <div className='lg:mt-1 mt-5 marquee'>  
                     <div className='marquee__group'>
                         <span>
                         <div className='flex items-center justify-center'>

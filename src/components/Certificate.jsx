@@ -29,6 +29,7 @@ const Certificate = () => {
     initial={{opacity:0}}
     whileInView={{opacity:1}}
     transition={{duration:2}}
+    className='lg:px-[3rem]'
     >
            <CertificateModal 
             open={open}
@@ -42,7 +43,7 @@ const Certificate = () => {
         id="Inter"
         className="lg:text-2xl text-sm font-bold text-center"
     >
-        Achievement Earned
+        Achievement earned
     </Typography>
     <Typography
       variant="h1"

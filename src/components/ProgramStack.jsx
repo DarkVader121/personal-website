@@ -12,22 +12,22 @@ const ProgramStack = () => {
     whileInView={{opacity:1}}
     transition={{duration:2}}
     >
-    <div className='lg:mt-10 lg:px-5 lg:py-5 lg:pt-15 mt-[1rem] px-[1rem] py-[1rem] bg-gray-500'>
+    <div className='lg:mt-10 lg:px-5 lg:py-[3rem] lg:pb-[5rem] lg:pt-15 mt-[1rem] px-[1rem] py-[1rem] bg-gray-500'>
         <Typography
             variant="lead"
             id="Inter"
             className="font-bold text-center lg:text-2xl text-sm  text-white"
         >
-           Explore My 
+           Explore my 
         </Typography>
         <Typography
             variant="h1"
             id="Inter"
-            className="lg:text-9xl lg:mt-10 text-center"
+            className="lg:text-9xl lg:mt-0 text-center"
         >
             Programming Stack
         </Typography>
-        <div className='grid lg:grid-cols-2 md:grid-cols-1 lg:justify-items-center lg:mt-5 mt-[1rem]'>
+        <div className='grid lg:grid-cols-2 md:grid-cols-1 lg:justify-items-center lg:mt-10 mt-[1rem]'>
           <div>
           <FrontendDevelopment/>
               
@@ -166,7 +166,7 @@ const ProgramStack = () => {
                   <div>
                    <div className='grid grid-cols-4 mt-5 hover:scale-110 duration-300'>
                      <div className='flex items-center'>
-                     <i class="fa-brands fa-sourcetree text-5xl "></i>                      </div>
+                     <i className="fa-brands fa-sourcetree text-5xl "></i>                      </div>
                         <div className='col-span-3 ml-3'>
                         <Typography
                             variant="h4"
