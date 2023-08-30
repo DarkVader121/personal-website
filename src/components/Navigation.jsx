@@ -2,7 +2,7 @@ import { Collapse, IconButton, Typography } from '@material-tailwind/react'
 import React from 'react'
 import { useState } from 'react'
 import {Link} from 'react-scroll'
-import Logo from '../public/Logo.png'
+import ErronLogo from '../public/logo.png'
 import {motion} from 'framer-motion'
 
 
@@ -97,12 +97,9 @@ const Navigation = () => {
   return (
     <div className='max-w-screen lg:px-5 lg:py-2 bg-blue-gray-1'>
       <div className='md:pl-[2rem] flex items-center justify-between '>
-        <motion.button
-          whileHover={{ scale:1.1}}
-          whileTap={{ scale: 0.9}}
-        >
-          <img src={Logo} width={200} height={100} alt="Logo" />
-        </motion.button>
+        <button>
+          <img src={ErronLogo} width={200} height={100} alt="Logo" />
+        </button>
         <div className='hidden lg:block'>{NavList}</div>
         <IconButton
           variant="text"

@@ -2,9 +2,9 @@ import { Typography } from '@material-tailwind/react'
 import React from 'react'
 import { Project1, Project2, Project3 } from '../components'
 import { motion } from 'framer-motion'
-import { useState, useEffect } from 'react'
 
 const Projects = () => {
+  
   return (
     <motion.div 
     initial={{opacity:0}}
