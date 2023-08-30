@@ -47,9 +47,9 @@ function App() {
               <section id="/Experience/">
                 <Experience/>
               </section>
-              <section id="/Videos/">
+              {/* <section id="/Videos/">
                 <Videos/>
-              </section>
+              </section> */}
               <section id="/Contact/">
                 <ContactMe/>
               </section>

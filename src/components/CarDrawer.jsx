@@ -20,7 +20,7 @@ const CarDrawer = () => {
     textStyles={`Inter`}
     handleClick={openDrawer}
    />
-    <Drawer open={open} onClose={closeDrawer} className='p-4 bg-gray-500' overlay={false} size={400}>
+    <Drawer open={open} onClose={closeDrawer} className='p-4 bg-gray-500' overlay={false} size={250}>
         <div className='mb-6 flex justify-between'>
             <Typography variant="h1" id="Inter" className="font-bold text-white">
                 Rent a Car
@@ -43,11 +43,11 @@ const CarDrawer = () => {
             </IconButton>
         </div>
         <Typography
-            variant="lead"
+            variant="paragraph"
             id="Inter"
             className="mb-8 pr-4"
         >
-        Rent a Car is a project I developed using Next.js and TypeScript. The core functionality of this application revolves around fetching car data from a RapidAPI source. One of the more intricate aspects of the project was working with TypeScript to implement multiple prop passing. This proved to be a bit challenging, but it also provided valuable learning experiences. TypeScript's static typing and type checking were crucial in ensuring the correctness of data passed between components. As a developer, it was rewarding to overcome these challenges and create a robust and reliable application like Carhub.
+        Rent a Car is a project I developed using Next.js and TypeScript. The core functionality of this application revolves around fetching car data from a RapidAPI source. One of the more intricate aspects of the project was working with TypeScript to implement multiple prop passing.
         </Typography>
                 <div className='border-solid flex items-center rounded-full  border-black'>
                   <li className='fa-solid fa-globe fa-2xl mr-1 '></li>

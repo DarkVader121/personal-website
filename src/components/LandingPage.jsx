@@ -78,21 +78,18 @@ const LandingPage = () => {
                      <Typography
                         variant="h1"
                         id="Inter"
-                        className="text-white lg:text-8xl "
+                        className="text-white lg:text-8xl text-3xl "
                      >
                         Welcome to my Portfolio!
                      </Typography>
                      <div className='flex items-center lg:gap-5 gap-1 mt-5'>
-                                <motion.button
-                                whileHover={{ scale:1.1}}
-                                whileTap={{ scale: 0.9}}
-                                >
-                                <Link className='bg-black text-white lg:p-3 p-2 rounded-lg lg:font-bold hover:bg-gray-900 hover:text-gray duration-300' id="Inter" to="Contact" spy={true} smooth={true} duration={5000}>
-                                <li className='fa-regular fa-handshake lg:fa-sm mr-3'></li>
+                                <button className='hover:text-white'>
+                                <Link className=' text-gray-500 hover:text-white lg:p-4 p-3 rounded-lg  lg:font-bold bg-gray-900  duration-300 ' id="Inter" to="/Contact/" spy={true} smooth={true} duration={5000}>
+                                <li className='fa-regular fa-handshake lg:fa-lg mr-3  '></li>
                                     Lets Talk
                                 </Link> 
                                
-                                </motion.button>
+                                </button>
                             <a href={Resume} download >
                             <CustomButton btnSize={`md`} title={`Download Resume`} btnVariant={`outlined`} containerStyles={`hover:text-white hover:bg-black duration-300`}/>
                             </a>
