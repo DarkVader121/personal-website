@@ -11,9 +11,9 @@ const SpeedDialNav = () => {
             <Typography
               variant="lead"
               id="Inter"
-              className="text-lg hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
+              className="text-lg font-bold  hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
             >
-            <Link to="LandPage"  smooth={true} duration={4000}>
+            <Link to="/LandPage/"  smooth={true} duration={4000}>
               Home
             </Link>
             </Typography>
@@ -22,9 +22,9 @@ const SpeedDialNav = () => {
             <Typography
               variant="lead"
               id="Inter"
-              className="text-lg hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
+              className="text-lg font-bold  hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
             >
-            <Link to="About"  smooth={true} duration={3000}>
+            <Link to="/About/"  smooth={true} duration={3000}>
               About
             </Link>
             </Typography>
@@ -33,9 +33,9 @@ const SpeedDialNav = () => {
             <Typography
               variant="lead"
               id="Inter"
-              className="text-lg hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
+              className="text-lg font-bold  hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
             >
-            <Link to="Projects"  smooth={true} duration={3000}>
+            <Link to="/Projects/"  smooth={true} duration={3000}>
               Projects
             </Link>
             </Typography>
@@ -44,9 +44,9 @@ const SpeedDialNav = () => {
             <Typography
               variant="lead"
               id="Inter"
-              className="text-lg hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
+              className="text-lg font-bold  hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
             >
-            <Link to="Certificate"  smooth={true} duration={3000}>
+            <Link to="/Certificate/"  smooth={true} duration={3000}>
               Certificates
             </Link>
             </Typography>
@@ -55,9 +55,9 @@ const SpeedDialNav = () => {
             <Typography
               variant="lead"
               id="Inter"
-              className="text-lg hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
+              className=" text-lg font-bold hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
             >
-            <Link to="Program"  smooth={true} duration={3000}>
+            <Link to="/Program/"  smooth={true} duration={3000}>
               Program Stack
             </Link>
           
@@ -67,9 +67,9 @@ const SpeedDialNav = () => {
             <Typography
               variant="lead"
               id="Inter"
-              className="text-lg hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
+              className=" text-lg font-bold hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
             >
-            <Link to="Experience"  smooth={true} duration={3000}>
+            <Link to="/Experience/"  smooth={true} duration={3000}>
              Experience
             </Link>
             </Typography>
@@ -78,9 +78,9 @@ const SpeedDialNav = () => {
             <Typography
               variant="lead"
               id="Inter"
-              className="text-lg hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
+              className=" text-lg font-bold hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
             >
-            <Link to="Videos"  smooth={true} duration={3000}>
+            <Link to="/Videos/"  smooth={true} duration={3000}>
              Videos
             </Link>
             </Typography>
@@ -89,9 +89,9 @@ const SpeedDialNav = () => {
             <Typography
               variant="lead"
               id="Inter"
-              className="text-lg hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
+              className=" text-lg font-bold hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
             >
-            <Link to="Contact"  smooth={true} duration={4000}>
+            <Link to="/Contact/"  smooth={true} duration={4000}>
              Let's Talk
             </Link>
             </Typography>

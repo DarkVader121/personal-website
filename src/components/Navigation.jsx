@@ -90,7 +90,7 @@ const Navigation = () => {
           <img src={ErronLogo} width={200} height={100} alt="Logo" />
         </button>
         <div className='hidden lg:block'>{NavList}</div>
-        <IconButton
+        {/* <IconButton
           variant="text"
           className='mr-5 h-6 w-6 text-inherit hover:bg-transparent  active:bg-transparent lg:hidden '
           ripple={false}
@@ -126,13 +126,13 @@ const Navigation = () => {
             />
           </svg>
         )}
-        </IconButton>
+        </IconButton> */}
       </div>
-        <Collapse open={openNav}>
+        {/* <Collapse open={openNav}>
           <div className=' lg:hidden '>
             {NavList}
           </div>
-        </Collapse>
+        </Collapse> */}
     </div>
    
   )
