@@ -20,7 +20,7 @@ const CarDrawer = () => {
     textStyles={`Inter`}
     handleClick={openDrawer}
    />
-    <Drawer open={open} onClose={closeDrawer} className='p-4 bg-gray-500' overlay={false} size={250}>
+    <Drawer open={open} onClose={closeDrawer} className='p-4 bg-gray-500' overlay={false} size={300}>
         <div className='mb-6 flex justify-between'>
             <Typography variant="h1" id="Inter" className="font-bold text-white">
                 Rent a Car
@@ -45,18 +45,15 @@ const CarDrawer = () => {
         <Typography
             variant="paragraph"
             id="Inter"
-            className="mb-8 pr-4"
+            className="mb-10"
         >
         Rent a Car is a project I developed using Next.js and TypeScript. The core functionality of this application revolves around fetching car data from a RapidAPI source. One of the more intricate aspects of the project was working with TypeScript to implement multiple prop passing.
         </Typography>
                 <div className='border-solid flex items-center rounded-full  border-black'>
                   <li className='fa-solid fa-globe fa-2xl mr-1 '></li>
-                  <li id='Inter' className='hover:text-white hover:scale-105 duration-300'>
-                  <a href="https://rent-a-car-2i9b.vercel.app/" rel="noopener" target="_blank" >
+                  <a href="https://rent-a-car-2i9b.vercel.app/" rel="noopener" target="_blank" id='Inter' className='hover:text-white hover:scale-105 duration-300 text-sm' >
                      https://rent-a-car-2i9b.vercel.app/
                   </a>
-                  </li>
-
                 </div>
     </Drawer>
     </React.Fragment>

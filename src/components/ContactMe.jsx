@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react'
-import { Typography, Input } from '@material-tailwind/react'
+import { Typography, Input,Textarea } from '@material-tailwind/react'
 import { CustomButton, AlertMessage } from '../components'
 import LogoErron from '../public/logo.png'
 import emailjs from '@emailjs/browser';
@@ -60,7 +60,7 @@ const ContactMe = () => {
         />
     }
 
-    <div className='lg:px-5 p-[1rem] '>        
+    <div className='lg:px-[3rem] p-[1rem] '>        
         <Typography
             variant="lead"
             id="Inter"
@@ -137,7 +137,7 @@ const ContactMe = () => {
                         </div>
                         <div className='col-span-2 lg:mt-10'>
                             <div className='w-full lg:px-5'>
-                                <Input label="Message" name="message" value={messageDetails} onChange={(e) => {setMessageDetails(e.target.value) }}/>
+                                <Textarea label="Message" name="message" value={messageDetails} onChange={(e) => {setMessageDetails(e.target.value) }}/>
                             </div>
                         </div>
                         <div className='col-span-2 lg:px-5 lg:mt-10'>

@@ -13,7 +13,7 @@ const LandingPage = () => {
   
   useEffect(() => {
     const typed = new Typed(el.current, {
-        strings: ['Front-end Developer', 'Programmer', 'Software Developer', 'Code writer', 'Coding...', 'still coding...', 'still coding...', 'Again, still coding../'],
+        strings: ['Front-end Developer', 'Programmer', 'Software Developer', 'Code writer', 'Coding...', 'Still coding...', 'Still coding...', 'Again, Still coding...'],
         typeSpeed: 80,
         backSpeed: 200, 
         loop: true,
@@ -34,7 +34,7 @@ const LandingPage = () => {
             opacity:1
         }}
         transition={{
-            duration:3
+            duration:2
         }}
         className='lg:px-[3rem] lg:py-20 px-[1rem] py-10 '>
         <Typography

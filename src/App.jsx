@@ -27,9 +27,10 @@ function App() {
         </motion.div>
        ) : (
         <>
-         <Navigation/>
+         
             <div>
               <section id="/LandPage/">
+              <Navigation/>
               <LandingPage />
               </section>
               <section id="/About/">
@@ -47,9 +48,9 @@ function App() {
               <section id="/Experience/">
                 <Experience/>
               </section>
-              {/* <section id="/Videos/">
+              <section id="/Videos/">
                 <Videos/>
-              </section> */}
+              </section>
               <section id="/Contact/">
                 <ContactMe/>
               </section>

@@ -1,7 +1,7 @@
-import { Link } from "react-scroll";
+
 import { Collapse, Typography} from "@material-tailwind/react";
 import { useState } from "react";
-
+import { Link } from "react-scroll";
 const SpeedDialNav = () => {
   const [openDial, setOpenDial] = useState(false)
   const DialNavList = ( 
@@ -13,7 +13,7 @@ const SpeedDialNav = () => {
               id="Inter"
               className="text-lg font-bold  hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
             >
-            <Link to="/LandPage/"  smooth={true} duration={4000}>
+            <Link to="/LandPage/"  >
               Home
             </Link>
             </Typography>
@@ -24,7 +24,7 @@ const SpeedDialNav = () => {
               id="Inter"
               className="text-lg font-bold  hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
             >
-            <Link to="/About/"  smooth={true} duration={3000}>
+            <Link to="/About/"   >
               About
             </Link>
             </Typography>
@@ -35,7 +35,7 @@ const SpeedDialNav = () => {
               id="Inter"
               className="text-lg font-bold  hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
             >
-            <Link to="/Projects/"  smooth={true} duration={3000}>
+            <Link to="/Projects/"   >
               Projects
             </Link>
             </Typography>
@@ -46,7 +46,7 @@ const SpeedDialNav = () => {
               id="Inter"
               className="text-lg font-bold  hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
             >
-            <Link to="/Certificate/"  smooth={true} duration={3000}>
+            <Link to="/Certificate/"   >
               Certificates
             </Link>
             </Typography>
@@ -57,7 +57,7 @@ const SpeedDialNav = () => {
               id="Inter"
               className=" text-lg font-bold hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
             >
-            <Link to="/Program/"  smooth={true} duration={3000}>
+            <Link to="/Program/"   >
               Program Stack
             </Link>
           
@@ -69,7 +69,7 @@ const SpeedDialNav = () => {
               id="Inter"
               className=" text-lg font-bold hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
             >
-            <Link to="/Experience/"  smooth={true} duration={3000}>
+            <Link to="/Experience/"   >
              Experience
             </Link>
             </Typography>
@@ -80,7 +80,7 @@ const SpeedDialNav = () => {
               id="Inter"
               className=" text-lg font-bold hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
             >
-            <Link to="/Videos/"  smooth={true} duration={3000}>
+            <Link to="/Videos/"   >
              Videos
             </Link>
             </Typography>
@@ -91,7 +91,7 @@ const SpeedDialNav = () => {
               id="Inter"
               className=" text-lg font-bold hover:bg-black hover:text-white hover:font-bold duration-300 p-2 rounded-lg"
             >
-            <Link to="/Contact/"  smooth={true} duration={4000}>
+            <Link to="/Contact/"  >
              Let's Talk
             </Link>
             </Typography>
