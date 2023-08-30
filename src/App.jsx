@@ -29,28 +29,28 @@ function App() {
         <>
          <Navigation/>
             <div>
-              <section id="LandPage">
+              <section id="/LandPage/">
               <LandingPage />
               </section>
-              <section id="About">
+              <section id="/About/">
                 <About/>
               </section>
-              <section id="Projects">
+              <section id="/Projects/">
                 <Projects/>
               </section>
-              <section id="Certificate">
+              <section id="/Certificate/">
                 <Certificate/>
               </section>
-              <section id="Program">
+              <section id="/Program/">
                 <ProgramStack />
               </section>
-              <section id="Experience">
+              <section id="/Experience/">
                 <Experience/>
               </section>
-              <section id="Videos">
+              <section id="/Videos/">
                 <Videos/>
               </section>
-              <section id="Contact">
+              <section id="/Contact/">
                 <ContactMe/>
               </section>
             </div>

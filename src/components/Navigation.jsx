@@ -4,6 +4,7 @@ import { useState } from 'react'
 import {Link} from 'react-scroll'
 import ErronLogo from '../public/logo.png'
 
+
 const Navigation = () => {
   const [openNav, setOpenNav] = useState(false)
 
@@ -16,7 +17,7 @@ const Navigation = () => {
         className="px-10 py-2 drop-shadow-md text-lg  hover:scale-105 duration-300 hover:bg-black hover:text-white hover:font-bold  "
       >
         <button>
-         <Link onClick={() => {setOpenNav(!openNav)}} to="About" spy={true} smooth={true}  duration={3000}>
+         <Link onClick={() => {setOpenNav(!openNav)}} to="/About/" smooth={true}  duration={3000}>
           About
          </Link> 
          </button>
@@ -27,7 +28,7 @@ const Navigation = () => {
         className="px-10 py-2 drop-shadow-md text-lg  hover:scale-105 duration-300 hover:bg-black hover:text-white hover:font-bold  "
       >
         <button>
-        <Link onClick={() => {setOpenNav(!openNav)}} to="Projects" spy={true} smooth={true} duration={3000}>
+        <Link onClick={() => {setOpenNav(!openNav)}} to="/Projects/" spy={true} smooth={true} duration={3000}>
           Projects
         </Link>
         </button>
@@ -38,7 +39,7 @@ const Navigation = () => {
         className="px-10 py-2 drop-shadow-md text-lg  hover:scale-105 duration-300 hover:bg-black hover:text-white hover:font-bold  "
       >
         <button>
-        <Link onClick={() => {setOpenNav(!openNav)}} to="Certificate" spy={true} smooth={true} duration={3000}>
+        <Link onClick={() => {setOpenNav(!openNav)}} to="/Certificate/" spy={true} smooth={true} duration={3000}>
           Certificates
         </Link>
         </button>
@@ -50,7 +51,7 @@ const Navigation = () => {
         className="px-10 py-2 drop-shadow-md text-lg hover:scale-105 duration-300 hover:bg-black hover:text-white hover:font-bold  "
       >
         <button>
-        <Link onClick={() => {setOpenNav(!openNav)}} to="Program" spy={true} smooth={true} duration={3000}>
+        <Link onClick={() => {setOpenNav(!openNav)}} to="/Program/" spy={true} smooth={true} duration={3000}>
           Program Stack
         </Link>
        </button>
@@ -62,7 +63,7 @@ const Navigation = () => {
         className="px-10 py-2 drop-shadow-md text-lg hover:scale-105 duration-300 hover:bg-black hover:text-white hover:font-bold  "
       >
          <button>
-        <Link onClick={() => {setOpenNav(!openNav)}} to="Experience" spy={true} smooth={true} duration={3000}>
+        <Link onClick={() => {setOpenNav(!openNav)}} to="/Experience/" spy={true} smooth={true} duration={3000}>
           Experience
         </Link>
         </button>
@@ -74,7 +75,7 @@ const Navigation = () => {
         className="px-10 py-2 drop-shadow-md text-lg hover:scale-105 duration-300 hover:bg-black hover:text-white hover:font-bold  "
       >
          <button>
-        <Link onClick={() => {setOpenNav(!openNav)}} to="Videos"  smooth={true} duration={4000}>
+        <Link onClick={() => {setOpenNav(!openNav)}} to="/Videos/"  smooth={true} duration={4000}>
           Videos
         </Link>
         </button>
