@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { Typography, Input, Textarea, Alert, Button } from '@material-tailwind/react'
 import { CustomButton, AlertMessage } from '../components'
-import Logo from '../public/Logo.png'
+import LogoErron from '../public/logo.png'
 import emailjs from '@emailjs/browser';
 import {motion} from 'framer-motion'
 
@@ -150,7 +150,7 @@ const ContactMe = () => {
         </div>
     </div>
     <div className='bg-gray-500 w-full px-5 py-5'>
-        <img src={Logo} width={200}alt="logo" />
+        <img src={LogoErron} width={200}alt="logo" />
     </div>
     </motion.div>
   )
