@@ -3,24 +3,12 @@ import React from 'react'
 import { useState } from 'react'
 import {Link} from 'react-scroll'
 import ErronLogo from '../public/logo.png'
-import {motion} from 'framer-motion'
-
 
 const Navigation = () => {
   const [openNav, setOpenNav] = useState(false)
 
   const NavList = (
-    <motion.nav 
-    initial={{
-        x:'-100vw', 
-        opacity: 0, 
-    }}
-    animate={{
-        x:0, 
-        opacity: 1, 
-    }}
-    transition={{ duration:2}}
-    >
+    <nav>
     <ul className='mb-4 mt-4 md:inline-block lg:flex  lg:mb-0 lg:mt-0  lg:items-center lg:gap-6 overflow-hidden'>
       <Typography
         variant="paragraph"
@@ -92,7 +80,7 @@ const Navigation = () => {
         </button>
       </Typography>
     </ul>
-    </motion.nav>
+    </nav>
   )
   return (
     <div className='max-w-screen lg:px-5 lg:py-2 bg-blue-gray-1'>

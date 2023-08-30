@@ -14,7 +14,7 @@ const LandingPage = () => {
   useEffect(() => {
     const typed = new Typed(el.current, {
         strings: ['Front-end Developer', 'Programmer', 'Software Developer', 'Code writer', 'Coding...', 'still coding...', 'still coding...', 'Again, still coding../'],
-        typeSpeed: 200,
+        typeSpeed: 80,
         backSpeed: 200, 
         loop: true,
       });

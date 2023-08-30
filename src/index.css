@@ -300,7 +300,7 @@ body{
 }
 
 .marquee{
-    --duration: 30s;
+    --duration: 60s;
     --gap: var(--space);
     display: flex;
     overflow: hidden;
