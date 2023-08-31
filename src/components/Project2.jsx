@@ -26,7 +26,7 @@ const Project2 = () => {
                 </div>
           </div>
         </div>
-        <div className='col-span-7 lg:px-10 lg:pb-10'>
+        <div className='col-span-7 lg:px-10 lg:pb-10 mt-[1rem]'>
         <Carousel 
           transition={{ duration: 2 }} 
           className="rounded-xl"      

@@ -1,4 +1,4 @@
-import { Typography } from '@material-tailwind/react'
+import { Typography, Tooltip } from '@material-tailwind/react'
 import React from 'react'
 import { Hoobies } from '../constants'
 import {motion} from 'framer-motion'
@@ -45,7 +45,7 @@ const About = () => {
             id="Inter"
             className="lg:mt-5 mt-[1rem] lg:text-3xl text-sm"
         >
-        I have a strong background in BS Information Technology with a specialization in React and Laravel, backed by a solid hands-on experience during my On-The-Job Training (OJT). My expertise spans both frontend and backend development, and I've honed my skills through education, including the attainment of a Meta Front-End Developer Professional Certificate. Additionally, I have expanded my proficiency in mobile app development through online courses in React Native. My commitment to staying up-to-date with the latest technologies and frameworks ensures that I can deliver top-notch solutions in the dynamic field of Information Technology.
+        I have a strong background in Information Technology with a specialization in Web Development using React and Laravel and backed with a solid hands-on experience during my On-The-Job Training (OJT). My expertise spans both frontend and backend development, and I've honed my skills through formal education, including my attainment of Meta Front-End Developer Professional Certificate. Furthermore  , I have expanded my proficiency in mobile app development through online courses in React Native. My commitment to staying up-to-date with the latest technologies and frameworks ensures that I can deliver top-notch solutions in the dynamic field of Information Technology.
         </Typography>
 
         <div className='lg:hidden mt-5'>
@@ -123,7 +123,7 @@ const About = () => {
                         id="Inter"
                         className="ml-3 text-3xl"
                     >
-                     <b>480+</b> OJT Hours  
+                     Internship at GlobalOr  
                     </Typography>
                     <Typography
                         variant="lead"
@@ -154,7 +154,10 @@ const About = () => {
                         id="Inter"
                         className="ml-3 text-3xl"
                     >
-                        BS Information Technology
+                        BS Information Technology at &nbsp;
+                        <Tooltip content="Holy Name University" placement="right-start">
+                        HNU
+                        </Tooltip>
                     </Typography>
                     <Typography
                         variant="lead"
@@ -219,7 +222,7 @@ const About = () => {
                         variant='h3'
                         id='Inter'
                     >
-                        Experience 
+                        Others
                     </Typography>
                     <Typography
                         variant='small'

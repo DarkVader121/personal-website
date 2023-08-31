@@ -66,7 +66,13 @@ const Experience = () => {
              </AccordionHeader>
             <AccordionBody>
               <Typography variant="lead" id="Inter" className=" text-lg lg:ml-[5rem] text-black">
-              • In June 2020, I worked as a Virtual Assistant  Freelancer for UPWORK GLOBAL INC., where I  conducted research, gathered data, and   managed lead databases to support  targeted customer segment identification  and lead generation efforts.
+              • Conducted research and gathered data on specific customer segments for lead generation purposes 
+              and utilized various sources and tools to collect information. <br />
+              • Identified target customer profiles based on specified criteria and parameters as well as verified and 
+              validated lead information to ensure accuracy and reliability. <br />
+              • Managed, updated and organized lead databases to track progress and measure effectiveness, and 
+              provided regular reports and updates to stakeholders. <br />
+
               </Typography>
             </AccordionBody>
           </Accordion>
@@ -78,7 +84,9 @@ const Experience = () => {
             </AccordionHeader>
             <AccordionBody>
             <Typography variant="lead" id="Inter" className=" pl-[5rem] text-lg text-black ">
-               • In the summer of 2016, I served as a Lead  Generation Assistant at JJS DATA MINING in Bohol, Philippines, excelling in virtual assistant services with a focus on lead generation and social media, adeptly researching and identifying potential leads and meticulously maintaining lead databases and interactions.           
+            • Proficient in providing virtual assistant services,specializing in lead generation and social media. <br />
+            • Experienced in researching and identifying potential leads within target markets.<br />
+            • Strong attention to detail in maintaining accurate lead databases and tracking lead interactions.   <br />
             </Typography>
             </AccordionBody>
           </Accordion>

@@ -84,7 +84,7 @@ const LandingPage = () => {
                      </Typography>
                      <div className='flex items-center lg:gap-5 gap-1 mt-5'>
                                 <button className='hover:text-white'>
-                                <Link className=' text-gray-500 hover:text-white lg:p-4 p-3 rounded-lg  lg:font-bold bg-gray-900  duration-300 ' id="Inter" to="/Contact/" spy={true} smooth={true} duration={5000}>
+                                <Link className=' text-gray-500 hover:text-white lg:p-4 p-3 rounded-lg  lg:font-bold bg-gray-900  duration-300 ' id="Inter" to="/Contact/" >
                                 <li className='fa-regular fa-handshake lg:fa-lg mr-3  '></li>
                                     Lets Talk
                                 </Link> 

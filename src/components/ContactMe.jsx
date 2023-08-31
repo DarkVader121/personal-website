@@ -90,7 +90,7 @@ const ContactMe = () => {
                     id="Inter"
                     className="lg:text-2xl text-sm"
                 >
-                I'm open to project collaborations, developing customized projects, and actively seeking job opportunities. If you're interested, feel free to <br /> reach out to me
+                I'm open to project collaborations, developing customized projects, and actively seeking job opportunities. If you're interested, feel free to reach out to me.
                 </Typography>
                 <div className='lg:mt-20 mt-[1rem]'>
                     <Typography
