@@ -45,7 +45,7 @@ const About = () => {
             id="Inter"
             className="lg:mt-5 mt-[1rem] lg:text-3xl text-sm"
         >
-        I have a strong background in Information Technology with a specialization in Web Development using React and Laravel and backed with a solid hands-on experience during my On-The-Job Training (OJT). My expertise spans both frontend and backend development, and I've honed my skills through formal education, including my attainment of Meta Front-End Developer Professional Certificate. Furthermore  , I have expanded my proficiency in mobile app development through online courses in React Native. My commitment to staying up-to-date with the latest technologies and frameworks ensures that I can deliver top-notch solutions in the dynamic field of Information Technology.
+        I have a strong background in Information Technology with a specialization in Web Development using React and Laravel and backed with a solid hands-on experience during my On-The-Job Training (OJT). My expertise spans both Front-end and Back-end Web Development, and I've honed my skills through formal education, including my attainment of Meta Front-End Developer Professional Certificate. Furthermore  , I have expanded my proficiency in mobile app development through online courses in React Native. My commitment to staying up-to-date with the latest technologies and frameworks ensures that I can deliver top-notch solutions in the dynamic field of Information Technology.
         </Typography>
 
         <div className='lg:hidden mt-5'>

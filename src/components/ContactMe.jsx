@@ -98,7 +98,7 @@ const ContactMe = () => {
                         id="Inter"
                         className="lg:text-2xl text-sm"
                     >
-                        Email Fails? <br /> 
+                        Email fails? <br /> 
                         <b> You can reach out to me here. </b> <br />
                     </Typography>
                     <div className='flex items-center'>

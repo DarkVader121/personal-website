@@ -13,7 +13,7 @@ const LandingPage = () => {
   
   useEffect(() => {
     const typed = new Typed(el.current, {
-        strings: ['Front-end Developer', 'Programmer', 'Software Developer', 'Code writer', 'Coding...', 'Still coding...', 'Still coding...', 'Again, Still coding...'],
+        strings: ['Front-end Developer', 'Programmer', 'Software Developer', 'Code writer', 'Coding...', 'Still coding...', 'Still coding...', 'Again, still coding...'],
         typeSpeed: 80,
         backSpeed: 200, 
         loop: true,
@@ -86,12 +86,12 @@ const LandingPage = () => {
                                 <button className='hover:text-white'>
                                 <Link className=' text-gray-500 hover:text-white lg:p-4 p-3 rounded-lg  lg:font-bold bg-gray-900  duration-300 ' id="Inter" to="/Contact/" >
                                 <li className='fa-regular fa-handshake lg:fa-lg mr-3  '></li>
-                                    Lets Talk
+                                    Let's talk!
                                 </Link> 
                                
                                 </button>
                             <a href={Resume} download >
-                            <CustomButton btnSize={`md`} title={`Download Resume`} btnVariant={`outlined`} containerStyles={`hover:text-white hover:bg-black duration-300`}/>
+                            <CustomButton btnSize={`md`} title="Download Resume" btnVariant={`outlined`} containerStyles={`hover:text-white hover:bg-black duration-300`}/>
                             </a>
                       </div>
                 </div>
