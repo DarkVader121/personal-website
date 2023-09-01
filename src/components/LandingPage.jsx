@@ -1,4 +1,4 @@
-import { Typography } from '@material-tailwind/react'
+import { Typography, Button } from '@material-tailwind/react'
 import React, { useEffect, useRef } from 'react'
 import tailwind__2 from '../public/tailwind__2.png'
 import material__ui from '../public/material__ui.png'
@@ -83,15 +83,22 @@ const LandingPage = () => {
                         Welcome to my Portfolio!
                      </Typography>
                      <div className='flex items-center lg:gap-5 gap-1 mt-5'>
-                                <button className='hover:text-white'>
+                                {/* <Button  className='hover:text-white'>
                                 <Link className=' text-gray-500 hover:text-white lg:p-4 p-3 rounded-lg  lg:font-bold bg-gray-900  duration-300 ' id="Inter" to="/Contact/" >
                                 <li className='fa-regular fa-handshake lg:fa-lg mr-3  '></li>
                                     Let's talk!
                                 </Link> 
-                               
-                                </button>
+                                </Button> */}
+                            <Button size='md'> 
+                                <Link  id="Inter" to="/Contact/" >
+                                <li className='fa-regular fa-handshake lg:fa-lg text-lg mr-3 '></li>
+                                <span className='text-white duration-100 text-lg' id='Inter'>
+                                    Let's talk!
+                                </span>
+                                </Link>
+                            </Button>
                             <a href={Resume} download >
-                            <CustomButton btnSize={`md`} title="Download Resume" btnVariant={`outlined`} containerStyles={`hover:text-white hover:bg-black duration-300`}/>
+                            <CustomButton btnSize={`md`} title="Download Resume" btnVariant={`outlined`} containerStyles={`hover:text-white hover:bg-black duration-300 lg:text-md text-sm`} textStyles={`Inter`}/>
                             </a>
                       </div>
                 </div>
