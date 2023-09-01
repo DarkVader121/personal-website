@@ -91,8 +91,8 @@ const LandingPage = () => {
                                 </Button> */}
                             <Button size='md'> 
                                 <Link  id="Inter" to="/Contact/" >
-                                <li className='fa-regular fa-handshake lg:fa-lg text-lg mr-3 '></li>
-                                <span className='text-white duration-100 text-lg' id='Inter'>
+                                <li className='fa-regular fa-handshake lg:fa-lg lg:text-lg mr-3 '></li>
+                                <span className='text-white duration-100 lg:text-lg text-base' id='Inter'>
                                     Let's talk!
                                 </span>
                                 </Link>
