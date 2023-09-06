@@ -12,7 +12,7 @@ const Project3 = () => {
           <Typography
             variant="h1"
             id="Inter"
-            className="font-bold lg:text-6xl text-3xl lg:mt-[2rem]"
+            className="font-bold lg:text-6xl text-3xl lg:mt-[2rem] mt-[1rem]"
           >
             Adopt
           </Typography>

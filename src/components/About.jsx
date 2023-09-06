@@ -45,7 +45,7 @@ const About = () => {
             id="Inter"
             className="lg:mt-5 mt-[1rem] lg:text-3xl text-sm"
         >
-        I have a strong background in Information Technology with a specialization in Web Development using React and Laravel and backed with a solid hands-on experience during my On-The-Job Training (OJT). My expertise spans both Front-end and Back-end Web Development, and I've honed my skills through formal education, including my attainment of Meta Front-End Developer Professional Certificate. Furthermore  , I have expanded my proficiency in mobile app development through online courses in React Native. My commitment to staying up-to-date with the latest technologies and frameworks ensures that I can deliver top-notch solutions in the dynamic field of Information Technology.
+            I'm an IT graduate specializing in React and Laravel web development, with hands-on experience from OJT. I'm skilled in both front-end and back-end development, holding a Meta Front-End Developer Professional Certificate and React Native Certificate. I've also enhanced my mobile app development skills with React Native courses, and I'm dedicated to staying current in the ever-evolving tech world.
         </Typography>
 
         <div className='lg:hidden mt-5'>
@@ -170,9 +170,9 @@ const About = () => {
             </motion.div>
         </div>
     </div>
-    <div className='hidden lg:flex bg-gray-500 lg:px-5 '>
-        <div className='grid lg:grid-cols-9 '>
-            <div className='flex items-center'>
+    <div className='hidden lg:flex bg-gray-500 lg:px-5 lg:py-[1rem]'>
+        <div className='grid lg:grid-cols-8 items-center'>
+            <div className='flex items-center col-span-2'>
                 <li className='fa-solid fa-border-all fa-2xl' style={{fontSize:"4rem"}}></li>
                 <div className='inline-block'>
                 <Typography
@@ -180,33 +180,25 @@ const About = () => {
                     id="Inter"
                     className="ml-3 text-3xl font-bold"
                 >
-                 Others 
-                </Typography>
-                <Typography 
-                    variant="lead"
-                    id="Inter"
-                    className="ml-3 font-bold"
-                >
-                    2000 - 2023
+                 Skills and Competencies 
                 </Typography>
                 </div>
             </div>
-            <div className='col-span-8'>
-            <div className='ml-12 flex justify-around mt-5'>
-            
-            {Hoobies.map((Hooby) => (
-                <div key={Hooby} value={Hooby}>
-                    <Typography
-                        variant="paragraph"
-                        id="Inter"
-                        className=""
-                    >
-                    {Hooby}
-                    </Typography>
+            <div className='ml-[2rem] col-span-6 '>
+                    <div className='flex justify-evenly items-center '>
+                    {Hoobies.map((Hooby) => (
+                        <div key={Hooby} value={Hooby}>
+                            <Typography
+                                variant="paragraph"
+                                id="Inter"
+                            >
+                            {Hooby}
+                            </Typography>
+                        </div>
+                    ))
+                    }
                 </div>
-            ))
-            }
-        </div>
+                 
             </div>
         </div>
 
@@ -222,13 +214,7 @@ const About = () => {
                         variant='h3'
                         id='Inter'
                     >
-                        Others
-                    </Typography>
-                    <Typography
-                        variant='small'
-                        id='Inter'
-                    >
-                        2000 - 2023
+                        Skills and Competencies 
                     </Typography>
                     <div className='marquee'>
                         <div className='marquee__group'>
@@ -236,7 +222,7 @@ const About = () => {
                                 variant='small'
                                 id='Inter'
                             >
-                                Singing, Dancing, Movie Nights, Camping, Fishing, Mobile and PC Games, Gardening
+                                Coding Enthusiast, Web Developer, Troubleshooting Maestro, Mobile App Developer, Team Collaborator, Attention to detail, Fast Learner, Analytical Thinking,
                             </Typography>
                         </div>
                         <div aria-hidden="true" className='marquee__group'>
@@ -244,7 +230,7 @@ const About = () => {
                                 variant='small'
                                 id='Inter'
                             >
-                                Singing, Dancing, Movie Nights, Camping, Fishing, Mobile and PC Games, Gardening,
+                                Coding Enthusiast, Web Developer, Troubleshooting Maestro, Mobile App Developer, Team Collaborator, Attention to detail, Fast Learner, Analytical Thinking,
                             </Typography>
                         </div>
                     </div>

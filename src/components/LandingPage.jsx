@@ -42,15 +42,14 @@ const LandingPage = () => {
             id="Inter"
             className="lg:font-extrabold lg:text-9xl md:5xl"
         >
-            Coding is not just about <br/> typing, it's about thinking.
+            Step into the future of <br /> technology today
         </Typography>
-        
         <Typography
             variant="lead"
             id="Inter"
-            className=""
+            className="lg:text-3xl"
         >
-            - Anonymous
+            - Explore now!
         </Typography>
         
     </motion.div>

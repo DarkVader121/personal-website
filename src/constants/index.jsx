@@ -1,12 +1,12 @@
 export const Hoobies = [
-    "Singing",
-    "Dancing", 
-    "Movie Nights", 
-    "Camping", 
-    "Fishing", 
-    "Mobile Games",
-    "PC Games",
-    "Gardening",
+    "Coding Enthusiast",
+    "Web Developer", 
+    "Troubleshooting Maestro", 
+    "Mobile App Developer", 
+    "Team Collaborator", 
+    "Attention to detail",
+    "Fast  Learner",
+    "Analytical Thinking",
 ]
 
 export const Youtube_links = [

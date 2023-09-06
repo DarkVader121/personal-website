@@ -1,12 +1,10 @@
 import React, { useRef, useState, useEffect } from 'react'
-import { Typography, Input,Textarea } from '@material-tailwind/react'
+import { Typography, Input,Textarea, Tooltip } from '@material-tailwind/react'
 import { CustomButton, AlertMessage } from '../components'
 import LogoErron from '../public/logo.png'
 import emailjs from '@emailjs/browser';
 import {motion} from 'framer-motion'
-
-
-
+import { validateEmail } from '../utils';
 
 const ContactMe = () => {
     const [disabled, setDisabled] = useState(true)
@@ -14,13 +12,16 @@ const ContactMe = () => {
     const [lastName, setLastName] = useState("")
     const [title, setTitle] = useState("")
     const [messageDetails, setMessageDetails] = useState("")
+    const [valid, setValid] = useState(false)
 
-    useEffect(() => {
+    useEffect(() => {   
+            setValid(validateEmail(title)); 
 
             if(firstName.trim() !== '' 
                && lastName.trim() !== ''
                && title.trim() !== ''
                && messageDetails.trim() !== ''
+               && valid  === true
                ){
                 setDisabled(false); 
                }else{
@@ -118,7 +119,7 @@ const ContactMe = () => {
                     <Typography
                         variant="h1"
                         id="Inter"
-                        className="lg:text-6xl text-3xl "
+                        className="lg:text-6xl text-3xl lg:mb-0 mb-[1rem] "
                     >
                     Send me a Message
                     </Typography>
@@ -130,9 +131,15 @@ const ContactMe = () => {
                          <div className='col-span-2 lg:px-5 lg:mt-10'>
                              <Input size="lg" label="Last Name" type='text' name="lastName" value={lastName} onChange={(e) => {setLastName(e.target.value) }}/>
                         </div>
-                        <div className='col-span-2 lg:mt-10'>
+                        <div className='col-span-2 lg:mt-8'>
                             <div className='w-full lg:px-5 '>
-                                <Input size='lg' label="Email Address" type='text' name="title" value={title} onChange={(e) => {setTitle(e.target.value)}}/> 
+                                <Input size='lg' label="Email Address" type='text' name="title" value={title} onChange={(e) => {setTitle(e.target.value)}}/>
+                                {!valid &&   <Typography
+                                    variant="small"
+                                    className="font-bold  ml-2"
+                                >
+                                    Please enter a valid email address. 
+                                </Typography>}
                             </div> 
                         </div>
                         <div className='col-span-2 lg:mt-10'>

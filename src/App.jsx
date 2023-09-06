@@ -9,25 +9,23 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() =>{
       setLoading(false)
-    }, 6000); 
+    }, 4000); 
   
     return () => clearTimeout(timer); 
   }, [])
 
   return (
     <>
-
       { loading ? (
         <motion.div
           initial={{ opacity:1 }}
           animate={{ opacity:0 }}
-          transition={{ duration:1, delay:5}}
+          transition={{ duration:1, delay:3}}
         >
           <Loader/>
         </motion.div>
        ) : (
         <>
-         
             <div>
               <section id="/LandPage/">
               <Navigation/>
@@ -58,7 +56,6 @@ function App() {
           <SpeedDialNav/>
         </>
        )}
-  
     </>
   )
 }
