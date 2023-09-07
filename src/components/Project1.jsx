@@ -37,16 +37,19 @@ const Project1 = () => {
             src={church__banner}
             alt="image 1"
             className=" w-full object-cover"
+            loading="lazy"
           />
           <img
             src={church__1}
             alt="image 2"
             className="h-full w-full object-cover"
+            loading="lazy"
           />
           <img
             src={church__2}
             alt="image 3"
             className="h-full w-full object-cover"
+            loading="lazy"
           />
         </Carousel>
         </div>

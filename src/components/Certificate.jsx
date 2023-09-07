@@ -64,58 +64,58 @@ const Certificate = () => {
     <div className='grid lg:grid-cols-3 grid-cols-2 justify-items-center gap-5'>
         <div className='hover:scale-105 duration-500 mt-[1rem]  ' onClick={() => {setSelectedId("Frontend_Certificate") 
                             setOpen(true);}}>
-            <img src={Frontend_Certificate} className='w-full' alt="" />
+            <img src={Frontend_Certificate} className='w-full' loading="lazy" alt="Certificate" />
         </div>
         <div className='hover:scale-105 duration-500 mt-[1rem]' onClick={() => {setSelectedId("Advance_react") 
                             setOpen(true);}}>
-          <img src={Advance_react} className='w-full' />
+          <img src={Advance_react} className='w-full' loading="lazy" alt="Certificate" />
         </div>
         <div className='hover:scale-105 duration-500 lg:mt-[1rem]' onClick={() => {setSelectedId("Basic") 
                             setOpen(true);}}>
-          <img src={Basic} className='w-full' />
+          <img src={Basic} className='w-full' loading="lazy" alt="Certificate" />
         </div>
 
 
       <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("In_depth") 
                            setOpen(true);}}>
-        <img src={In_depth} className='w-full' />
+        <img src={In_depth} className='w-full' loading="lazy" alt="Certificate"/>
       </div>
       <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Javascript") 
                            setOpen(true);}}>
-        <img src={Javascript} className='w-full' />
+        <img src={Javascript} className='w-full' loading="lazy" alt="Certificate" />
       </div>
       <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Introduction") 
                            setOpen(true);}}>
-          <img src={Introduction} className='w-full' alt="" />
+          <img src={Introduction} className='w-full' loading="lazy" alt="Certificate" />
       </div>
 
       <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Interview") 
                            setOpen(true);}}>
-        <img src={Interview} className='w-full' />
+        <img src={Interview} className='w-full' loading="lazy" alt="Certificate" />
       </div>
       <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Version") 
                            setOpen(true);}}>
-          <img src={Version} className='w-full' alt="" />
+          <img src={Version} className='w-full' loading="lazy" alt="Certificate" />
       </div>
       <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("React_native") 
                            setOpen(true);}}>
-          <img src={React_native} className='w-full' alt="" />
+          <img src={React_native} className='w-full' loading="lazy" alt="Certificate" />
       </div>
 
 
        <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("UX_UI") 
                            setOpen(true);}}>
-        <img src={UX_UI} className='w-full' />
+        <img src={UX_UI} className='w-full' loading="lazy"  alt="Certificate"/>
       </div>
 
       <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Introduction_mobile") 
                            setOpen(true);}}>
-          <img src={Introduction_mobile} className='w-full' alt="" />
+          <img src={Introduction_mobile} className='w-full' loading="lazy" alt="Certificate" />
       </div>
 
       <div className='hover:scale-105 duration-500' onClick={() => {setSelectedId("Capstone") 
                             setOpen(true);}}>
-         <img src={Capstone} className='w-full' alt="" />
+         <img src={Capstone} className='w-full' loading="lazy" alt="Certificate" />
       </div>
     
     </div>
