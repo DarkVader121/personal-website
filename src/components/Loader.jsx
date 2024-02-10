@@ -5,14 +5,14 @@ const Loader = () => {
   return (
     <>
     <div className='flex justify-center items-center h-screen gap-10'>
-        <div class="loader__icon">
-          <div class="loader-square"></div>
-          <div class="loader-square"></div>
-          <div class="loader-square"></div>
-          <div class="loader-square"></div>
-          <div class="loader-square"></div>
-          <div class="loader-square"></div>
-          <div class="loader-square"></div>
+        <div className="loader__icon">
+          <div className="loader-square"></div>
+          <div className="loader-square"></div>
+          <div className="loader-square"></div>
+          <div className="loader-square"></div>
+          <div className="loader-square"></div>
+          <div className="loader-square"></div>
+          <div className="loader-square"></div>
         </div>
         <div className='hidden lg:block'>
           <Typography 

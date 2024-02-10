@@ -4,9 +4,6 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 const SpeedDialNav = () => {
   const [openDial, setOpenDial] = useState(false)
-
-
-
   const DialNavList = ( 
     <>
         <div className="flex flex-col items-end mb-4 gap-1 bg-gray-100 rounded-lg bg-opacity-50 ">

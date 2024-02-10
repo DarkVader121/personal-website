@@ -44,11 +44,11 @@ const CertificateModal = ({open, handleOpen, selectedId}) => {
   return (
    <Dialog open={open} handler={handleOpen} size={'lg'} >
     {selectedId && (
-        <div layoutId={selectedId}>
+        <div layoutid={selectedId}>
             {
             <img src={path} className='w-full' alt="" />
             }
-            </div>
+        </div>
     )}
     </Dialog>
   )

@@ -4,8 +4,8 @@ import { Button } from '@material-tailwind/react'
 const CustomButton = ({title, btnColor, btnSize, btnType,btnVariant,btnValue, containerStyles, textStyles, handleClick, leftIcon, isDisabled }) => {
   return (
     <Button
-        type={ btnType || "button"}
-        color={ `${ btnColor }` }
+        type={ btnType || "button" }
+        color={ `${btnColor}` }
         size={ `${btnSize}` }
         variant={ `${btnVariant}` }
         className={ `${containerStyles}` }

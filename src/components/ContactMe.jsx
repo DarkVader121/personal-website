@@ -57,6 +57,7 @@ const ContactMe = () => {
     >
     {alert && 
         <AlertMessage
+            open={alert} //Pass `alert` as a prop to control visibility
             setAlert={setAlert}
         />
     }
@@ -148,7 +149,7 @@ const ContactMe = () => {
                             </div>
                         </div>
                         <div className='col-span-2 lg:px-5 lg:mt-10'>
-                            <CustomButton title={`Send`} btnType={`submit`} btnValue={`Send`} isDisabled={disabled} />                                
+                            <CustomButton title={`Send`} btnVariant={`filled`} btnSize={`sm`} btnColor={`gray`} btnType={`submit`} btnValue={`Send`} isDisabled={disabled} />                                
                         </div>
                     </div>
                     </form>
