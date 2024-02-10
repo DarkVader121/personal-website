@@ -18,7 +18,7 @@ const YoutubeFrame = ({youtube_data}) => {
             </div>
         </div>
         <div className='lg:hidden mt-[1rem]'>   
-             <iframe width="100%" height="200" src={`https://www.youtube.com/embed/${videoId}`}></iframe>
+             <iframe width="100%" height="200" src={`https://www.youtube.com/embed/${videoId}`} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
         </>
     )

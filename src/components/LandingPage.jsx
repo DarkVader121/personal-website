@@ -97,7 +97,7 @@ const LandingPage = () => {
                                 </Link>
                             </Button>
                             <a href={Resume} download >
-                            <CustomButton btnSize={`md`} title="Download Resume" btnVariant={`outlined`} containerStyles={`hover:text-white hover:bg-black duration-300 lg:text-md text-sm`} textStyles={`Inter`}/>
+                            <CustomButton btnColor="gray" btnSize={`md`}  title="Download Resume" btnVariant={`outlined`} containerStyles={`hover:text-white hover:bg-black duration-300 lg:text-md text-sm`} textStyles={`Inter`}/>
                             </a>
                       </div>
                 </div>

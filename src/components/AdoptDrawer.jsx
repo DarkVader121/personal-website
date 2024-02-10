@@ -12,7 +12,7 @@ const AdoptDrawer = () => {
     <React.Fragment>
     <CustomButton
     btnSize={`sm`}
-    btnColor={`black`}
+    btnColor="gray"
     btnVariant={`outlined`}
     title={`View Details`}
     leftIcon={`fa-solid fa-circle-info fa-2xl flex items-center mr-1`}
