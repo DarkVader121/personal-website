@@ -20,7 +20,7 @@ import Certificates from "../public/Coursera Certificate/Meta Certificates.pdf"
 
 
 const Certificate = () => {
-  const [selectedId, setSelectedId] = useState(null);
+  const [selectedId, setSelectedId] = useState("");
   const [open, setOpen] = useState(false)
 
   const handleOpen = () => setOpen(!open);
@@ -58,6 +58,7 @@ const Certificate = () => {
       textStyles={`Inter`}
       btnVariant={`gradient`}
       btnSize={`lg`}
+      btnColor="gray"
       containerStyles={`lg:mt-3 lg:mb-3`}
     />
     </a>

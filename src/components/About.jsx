@@ -51,7 +51,7 @@ const About = () => {
         <div className='lg:hidden mt-5'>
             <div className='grid grid-cols-8'>
                 <div className='mr-3 col-span-1 flex mt-1 justify-end items-start'>
-                 <i class="fa-solid fa-desktop text-2xl"></i>
+                 <i className="fa-solid fa-desktop text-2xl"></i>
                 </div>
 
                 <div className='col-span-7  text-2xl '>
@@ -77,7 +77,7 @@ const About = () => {
             </div>
             <div className='grid grid-cols-8 mt-5'>
                 <div className='mr-3 col-span-1 flex mt-1 justify-end items-start'>
-                 <i class="fa-solid fa-graduation-cap text-2xl"></i>
+                 <i className="fa-solid fa-graduation-cap text-2xl"></i>
                 </div>
                 <div className='col-span-7  text-2xl '>
                     <Typography
@@ -206,7 +206,7 @@ const About = () => {
     <div className="lg:hidden bg-gray-500 px-[1rem] mt-5">
             <div className='grid grid-cols-8'>
                 <div className='mr-3 col-span-1 flex mt-1 justify-end items-start'>
-                   <i class="fa-solid fa-border-all text-2xl"></i>
+                   <i className="fa-solid fa-border-all text-2xl"></i>
                 </div>
 
                 <div className='col-span-7  text-2xl '>
