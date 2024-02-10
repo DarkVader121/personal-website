@@ -4,7 +4,7 @@ import tailwind__2 from '../public/tailwind__2.png'
 import material__ui from '../public/material__ui.png'
 import { Link } from 'react-scroll'
 import {CustomButton} from '../components'
-import Resume from '../public/Coursera Certificate/Erron_John_resume.pdf'
+import Resume from '../public/Coursera Certificate/Lapac.pdf'
 import { motion } from 'framer-motion'
 import Typed from 'typed.js';
 
